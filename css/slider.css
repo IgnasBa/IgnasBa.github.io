@@ -10,7 +10,7 @@
     z-index: -1;
 }
 .slides{
-  width:100%;
+  width:400%;
   height:100%;
   position:relative;
   -webkit-animation:slide 30s infinite;
