@@ -1,0 +1,46 @@
+<!doctype=html>
+<html lang=en>
+
+<head>
+    <title>Reserve a table</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/table.css" type="text/css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+    body{
+    background-image: url(images/background.png);
+    background-size: 100%, 100%;
+    }
+    </style>
+
+<body>
+    <legend>Reservation details:</legend>
+
+    <form class="my-form">
+        <div class="form-group">
+            <label>Name: </label>
+            <input type="text" name="name">
+        </div>
+        <div class="form-group">
+            <label>E-mail: </label>
+            <input type="text" name="email">
+        </div>
+        <div class="form-group">
+            <label for="reservation-time">Date/time:</label>
+            <input type="datetime-local" id="party-time" name="party-time" value="2018-10-12T19:30" min="2018-06-07T12:00" max="2019-12-31T21:00" />
+        </div>
+        <div class="form-group">
+            <label for="persons-number">Number of persons: </label>
+            <input type="text" name="persons-number">
+        </div>
+        <div class="form-group">
+            <label>Message: </label>
+            <textarea name="message"></textarea>
+        </div>
+        <input class="button" type="submit" value="Submit" namne="">
+    </form>
+</body>
+
+</html>
