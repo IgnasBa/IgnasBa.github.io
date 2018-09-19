@@ -106,3 +106,32 @@ footer ul li {
     padding-left: 5%;
 }
 /*end of footer adjustments*/
+
+/*CSS for the menu*/
+
+ body.menu {
+            background: url(bg.png) center fixed;
+        }
+
+        .menu main {
+            text-align: center;
+        }
+
+        .menu article {
+            color: #cfcdc6;
+        }
+
+        .menu h2 {
+            color: #d09b1d;
+            font-family: 'Oswald', sans-serif;
+            font-size: 50px
+        }
+
+        .menu h4 {
+            color: #d09b1d;
+            font-family: 'Oswald', sans-serif;
+        }
+        
+        .menu p {
+            font-family: palitino;
+        }
