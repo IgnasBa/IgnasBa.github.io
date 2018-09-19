@@ -114,7 +114,8 @@ footer a {
 
 footer ul li {
     display: inline;
-    padding-left: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 /*end of footer adjustments*/
 
