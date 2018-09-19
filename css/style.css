@@ -89,9 +89,12 @@ body header a {
 }
 .logo {
     position: absolute;
-    top: 10%;
-    left: 30%;
+    top:90px;
+    left:400px;
+    max-width:50%;
     height: auto;
+    max-height: 50%;
+    
 
 
 }
