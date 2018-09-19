@@ -75,8 +75,8 @@ body header a {
     font-size: 2em;
     letter-spacing: 2px;
     position: relative;
-    bottom: 100px;
-    left: 41%;
+    top: 600px;
+    left: 45%;
     background-color:transparent;
     border: 3px solid #d09b1d;
     color: white;
