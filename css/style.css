@@ -2,6 +2,9 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+header {
+    text-decoration: none;
+}
                 .overlay {
                     height: 0%;
                     width: 100%;
