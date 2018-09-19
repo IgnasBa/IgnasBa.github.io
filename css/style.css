@@ -9,6 +9,9 @@ body {
 
 body header a {
     text-decoration: none;
+    padding: 10px;
+    height: 35px;
+    width: 35px;
 }
                 .overlay {
                     height: 0%;
