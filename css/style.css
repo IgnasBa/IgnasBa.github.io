@@ -107,6 +107,7 @@ footer ul li {
 /*CSS for the menu*/
 
  body.menu {
+            margin: 0px;
             background: url(../images/bg.png) center fixed;
             background-size: 100%, 100%;
         }
