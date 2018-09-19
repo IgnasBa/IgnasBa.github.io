@@ -1,8 +1,9 @@
+/*
 main {
-    /*background-image: url(../images/bg.png);*/
+    background-image: url(../images/bg.png);
     background-size: 100%, 100%;
 }
-
+*/
 body {
     font-family: 'Oswald', sans-serif;
 }
