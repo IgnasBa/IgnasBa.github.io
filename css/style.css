@@ -85,14 +85,12 @@ body header a {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
-    width: 100%;
     height: auto;
 }
 .logo {
     position: absolute;
     top: 10%;
     left: 30%;
-    width: 100%;
     height: auto;
 
 
