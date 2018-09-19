@@ -5,6 +5,12 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+.icons{
+    padding-top: 4%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 body header a {
     text-decoration: none;
 }
