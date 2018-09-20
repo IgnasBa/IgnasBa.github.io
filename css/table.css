@@ -69,4 +69,8 @@ footer ul li {
     padding-left: 2%;
     padding-right: 2%;
 }
-   
+.footer {
+    position: absolute;
+ bottom: 0;
+ width: 100%;
+    }
