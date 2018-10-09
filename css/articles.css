@@ -168,7 +168,7 @@ h1 {
     list-style-type: circle;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
     .middle {
         border-left: 10px solid white;
         border-right: 10px solid white;
