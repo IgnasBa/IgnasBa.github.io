@@ -207,3 +207,10 @@ a:link {
 .box h2 {
     margin-bottom: 10px;
 }
+@media screen and (max-width: 800px) {
+    body {
+        background-repeat: repeat;
+        background-attachment: local;
+
+    }
+}
