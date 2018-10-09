@@ -183,3 +183,10 @@ h1 {
     }
 
 }
+@media screen and (max-width: 800px) {
+    body {
+        background-repeat: repeat;
+        background-attachment: local;
+
+    }
+}
