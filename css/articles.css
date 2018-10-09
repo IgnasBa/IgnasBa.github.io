@@ -22,8 +22,8 @@ body {
     font-family: cursive;
     font-size: 1.05em;
     background-image: url(/images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+        background-repeat: repeat;
+        background-attachment: local;
 
 }
 
