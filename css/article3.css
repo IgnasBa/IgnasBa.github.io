@@ -22,8 +22,8 @@ body {
     font-family: cursive;
     font-size: 1.05em;
     background-image: url(/images/background.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+        background-repeat: repeat;
+        background-attachment: local;
 
 }
 
@@ -189,11 +189,4 @@ h1 {
     width: 30%;
     height: auto;
     margin-left: 100px;
-}
-@media screen and (max-width: 800px) {
-    body {
-        background-repeat: repeat;
-        background-attachment: local;
-
-    }
 }
