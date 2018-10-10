@@ -190,3 +190,7 @@ h1 {
     height: auto;
     margin-left: 100px;
 }
+#logo
+{
+    padding: 5px;
+}
