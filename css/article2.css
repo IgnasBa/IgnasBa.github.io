@@ -19,7 +19,7 @@ summary {
 }
 
 body {
-    font-family: cursive;
+    font-family: helvetica, sans-serif;
     font-size: 1.05em;
     background-image: url(/images/background.jpg);
         background-repeat: repeat;
