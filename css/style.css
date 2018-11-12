@@ -395,7 +395,7 @@ h1 {
 
 /* Middle
 -----------------------------------------------------------------------------*/
-.content {background-color: #D8AF7B;}
+
 .button1{
     position: absolute;
     top:80%;
@@ -484,6 +484,7 @@ a {
     .button1{
         display: block;
     }
+    .content {background-color: #D8AF7B;}
 }
 
 
