@@ -419,12 +419,12 @@ h1 {
 .line {
     background: #000;
     margin-top: 1em;
-    height: 1em;
+    height: 0.2em;
 }
 
 .line2 {
     background: #000;
-    height: 1em;
+    height: 0.2em;
 }
 
 .flex-container {
