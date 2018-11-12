@@ -395,7 +395,21 @@ h1 {
 
 /* Middle
 -----------------------------------------------------------------------------*/
-.content {}
+.content {background-color: #D8AF7B;}
+.button1{
+    position: absolute;
+    top:80%;
+    left:45%;
+    text-decoration: none;
+    width: 10em;
+    height: 3em;
+    font-size: 2em;
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+    
+}
+
 
 .mainimg {
     width: 100%;
@@ -457,6 +471,9 @@ a {
     text-decoration: none;
     color: #000
 }
+    .button1{
+        display: none;
+    }
 @media only screen  and (min-width : 1000px) {
     .mainimg {
         top: 0;
@@ -464,6 +481,9 @@ a {
     height: auto;
         z-index: -1;
 }
+    .button1{
+        display: block;
+    }
 }
 
 
