@@ -164,6 +164,7 @@ h1 {
     margin: 0.5em;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
+        line-height: 0.8em;
     
 
 }
@@ -172,6 +173,7 @@ h2 {
     font-size: 2em;
     margin: 0.5em;
     font-family: 'EB Garamond', serif;
+        line-height: 0.8em;
 
 }
 
@@ -181,6 +183,7 @@ h3{
     font-size: 3em;
     margin: 1em;
     font-family: 'EB Garamond', serif;
+        line-height: 0.8em;
 
 }
 p{
@@ -197,6 +200,7 @@ h5 {
     margin: 0.5em;
     font-family: 'EB Garamond', serif;
     font-weight: bold;
+        line-height: 0.8em;
     
 
 }
@@ -209,6 +213,9 @@ h5 {
     font-family: 'EB Garamond', serif;
 
 }
+i{
+    margin-right: 1em;
+}
 .navimg{
     width: 1.2em;
     position: absolute;
@@ -220,7 +227,7 @@ h5 {
 
 .cart {
     position: absolute;
-    top: 0.1em;
+    top: 1em;
     width: 3.5em;
     height: auto;
     padding: 2em;
@@ -386,7 +393,9 @@ h5 {
         display: none;
     }
     .cart{
-        display: none;
+        margin-left: 8em;
+        margin-top: 1em;
+   
     }
     .header{
         height: 130px;
@@ -414,7 +423,7 @@ h5 {
 .navigation2 li{
  
     float: left;
-        padding-left: 10%;
+        padding-left: 30%;
     padding-top: 1.5em;
     font-size: 1.5em;
     
@@ -447,7 +456,7 @@ button{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 10%;
+    width: 7em;
     height: 3em;
 
 }
@@ -523,8 +532,9 @@ a {
         display: none;
     }
 .item{
-    margin: 3em;
-    display: block;
+    width: 30%;
+    margin-top: 3em;
+    margin-left: 1em;
     float: left;
     
 }
@@ -549,18 +559,16 @@ a {
 
 
 
+
 /* Footer
 -----------------------------------------------------------------------------*/
 .footer {
     bottom:0px;
-    height: 4em;
+    height: 6em;
     background: #000;
 
 }
-#footer1{
-    position: absolute;
-    bottom: 0px;
-}
+
 .footer img{
     width: 5%;
     margin: 1em;
@@ -570,4 +578,14 @@ a {
         .footer{
             background: #fff;
         }
+        #footer1{
+    
+    bottom: 0px;
+}
     }
+.footer h2{
+    position: absolute;
+    margin-left: 45%;
+    margin-top: 1em;;
+    
+}
