@@ -1,0 +1,573 @@
+/* Eric Meyer's CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px Arial, sans-serif;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 300px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin: 0.5em;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    
+
+}
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 0.5em;
+    font-family: 'EB Garamond', serif;
+
+}
+
+
+h3{
+        text-align: center;
+    font-size: 3em;
+    margin: 1em;
+    font-family: 'EB Garamond', serif;
+
+}
+p{
+       font-family: 'EB Garamond', serif;
+}
+h4{
+    font-family: 'EB Garamond', serif;
+    margin-top: 0.3em;
+    line-height: 0.8em;
+}
+h5 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0.5em;
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    
+
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+    height: 100px;
+    background: #fff;
+    font-family: 'EB Garamond', serif;
+
+}
+.navimg{
+    width: 1.2em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 1em;
+    
+}
+
+.cart {
+    position: absolute;
+    top: 0.1em;
+    width: 3.5em;
+    height: auto;
+    padding: 2em;
+
+}
+
+.logo {
+    margin-top: 0.5em;
+    width: 7em;
+    position: absolute;
+    margin-left: 45%;
+    margin-right: auto;
+}
+
+/* nav*/
+
+.nav-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: #1f2227;
+        opacity: 0;
+        transition: all 0.2s ease;
+    }
+
+    .nav-container ul {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+    }
+
+    .nav-container ul li {
+        display: block;
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+        
+    }
+
+    .nav-container ul li:nth-child(1) a {
+        transition-delay: 0.2s;
+    }
+
+    .nav-container ul li:nth-child(2) a {
+        transition-delay: 0.3s;
+    }
+
+    .nav-container ul li:nth-child(3) a {
+        transition-delay: 0.4s;
+    }
+
+    .nav-container ul li:nth-child(4) a {
+        transition-delay: 0.5s;
+    }
+
+    .nav-container ul li:not(:first-child) {
+        margin-left: 0;
+    }
+
+    .nav-container ul li a {
+        padding: 10px 25px;
+        opacity: 0;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 600;
+        transform: translateY(-20px);
+        transition: all 0.2s ease;
+        
+    }
+
+    .nav-open {
+        margin: 1.5em;
+        position: absolute;
+        right: 1em;
+        top: 1em;
+        display: block;
+        width: 2em;
+        cursor: pointer;
+        z-index: 9999;
+        border-radius: 50%;
+    }
+
+    .nav-open i {
+        display: block;
+        width: 40px;
+        height: 7px;
+        background: #1f2227;
+        border-radius: 2px;
+        margin-left: 14px;
+        
+    }
+
+    .nav-open i:nth-child(1) {
+        margin-top: 16px;
+    }
+
+    .nav-open i:nth-child(2) {
+        margin-top: 4px;
+        opacity: 1;
+    }
+
+    .nav-open i:nth-child(3) {
+        margin-top: 4px;
+    }
+}
+
+#nav:checked + .nav-open {
+    transform: rotate(45deg);
+}
+
+#nav:checked + .nav-open i {
+    background: #fff;
+    transition: transform 0.2s ease;
+}
+
+#nav:checked + .nav-open i:nth-child(1) {
+    transform: translateY(6px) rotate(180deg);
+}
+
+#nav:checked + .nav-open i:nth-child(2) {
+    opacity: 0;
+}
+
+#nav:checked + .nav-open i:nth-child(3) {
+    transform: translateY(-6px) rotate(90deg);
+}
+
+#nav:checked ~ .nav-container {
+    z-index: 9990;
+    opacity: 1;
+}
+
+#nav:checked ~ .nav-container ul li a {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.hidden {
+    display: none;
+}
+.navigation2{
+    display: none;
+    font-size: 0;
+}
+    .line2{
+        display: none;
+    }
+.logo2{
+    display: none;
+}
+    .navigation3{
+    display: none;
+    font-size: 0;
+}
+
+@media only screen  and (min-width : 1000px) {
+    .navigation{
+        display: none;
+    }
+    .cart{
+        display: none;
+    }
+    .header{
+        height: 130px;
+    }
+    .line2{
+        display: block;
+    }
+    .logo2{
+    display: block;
+    position: absolute;
+        width: 10em;
+        height: auto;
+        left: 46.5%;
+        top: 0.4em;
+}
+    .logo{
+        display: none;
+    }
+    
+
+.navigation2{
+    display: block;
+       font-size: 2em;
+}
+.navigation2 li{
+ 
+    float: left;
+        padding-left: 10%;
+    padding-top: 1.5em;
+    font-size: 1.5em;
+    
+}
+    .navigation3{
+    display: block;
+       font-size: 2em;
+}
+.navigation3 li{
+ 
+    float: right;
+            padding-right: 7%;
+    padding-top: 1.5em;
+    font-size: 1.5em;
+
+    
+}
+
+}
+
+
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content{
+    min-height: 100%;
+}
+button{
+    margin-top: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    height: 3em;
+
+}
+.button{
+    
+}
+
+
+.mainimg {
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.line {
+    background: #000;
+    margin-top: 1em;
+    height: 0.2em;
+}
+
+.line2 {
+    background: #000;
+    height: 0.2em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.flex-container p {
+    padding-top: 0.3em;
+    font-size: 0.6em;
+}
+
+.flex-container div {
+
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    width: 40%;
+    height: auto;
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collections {}
+
+.flex-container img {
+    width: 100%;
+}
+
+.button {
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em;
+        font-size: 3em;
+    font-family: 'EB Garamond', serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000
+}
+    .button1{
+        display: none;
+    }
+.item{
+    margin: 3em;
+    display: block;
+    float: left;
+    
+}
+@media only screen  and (min-width : 1000px) {
+    .mainimg {
+        top: 0;
+    width: 100%;
+    height: auto;
+        z-index: -1;
+}
+    .button1{
+        display: block;
+    }
+    .button{
+        display: none;
+    }
+    #line{
+        display: none;
+    }
+}
+
+
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    bottom:0px;
+    height: 4em;
+    background: #000;
+
+}
+#footer1{
+    position: absolute;
+    bottom: 0px;
+}
+.footer img{
+    width: 5%;
+    margin: 1em;
+    float: right;
+}
+    @media only screen  and (min-width : 1000px) {
+        .footer{
+            background: #fff;
+        }
+    }
