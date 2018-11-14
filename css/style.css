@@ -173,7 +173,7 @@ h2 {
     font-size: 2em;
     margin: 0.5em;
     font-family: 'EB Garamond', serif;
-        line-height: 0.8em;
+        line-height: 1em;
 
 }
 
@@ -481,7 +481,11 @@ button{
     background: #000;
     height: 0.2em;
 }
-
+.line3{
+        background: #000;
+    margin-top: 1em;
+    height: 0.2em;
+}
 .flex-container {
     display: flex;
     justify-content: center;
@@ -551,9 +555,14 @@ a {
     .button{
         display: none;
     }
-    #line{
+    .line3{
         display: none;
     }
+}
+.moto{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 100%;
 }
 
 
@@ -585,7 +594,7 @@ a {
     }
 .footer h2{
     position: absolute;
-    margin-left: 45%;
-    margin-top: 1em;;
+    margin-left: 35em;
+    margin-top: 1.25em;
     
 }
