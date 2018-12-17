@@ -229,7 +229,12 @@ strong {
 * {
     font-family: itc-avant-garde-gothic-pro, sans-serif;
 }
-
+h7{
+    font-size: 2em;
+    line-height: 12.75em;
+    text-align: center;
+    margin: 1em;
+}
 /* Header
 -----------------------------------------------------------------------------*/
 
@@ -242,16 +247,18 @@ strong {
 }
 
 /* nav*/
-.navigation a{
+.navigation a {
     text-align: center;
     vertical-align: middle;
     line-height: 1.75em;
 }
-.navigation2 a{
+
+.navigation2 a {
     text-align: center;
     vertical-align: middle;
     line-height: 1.75em;
 }
+
 .nav-container {
     position: absolute;
     top: 0;
@@ -313,14 +320,15 @@ strong {
 
 .nav-open {
     margin: 1em;
-        position: absolute;
-        right: 1em;
-        
-        display: block;
-        width: 2em;
-        cursor: pointer;
-        z-index: 9999;
-    border-radius: 50%;}
+    position: absolute;
+    right: 1em;
+
+    display: block;
+    width: 2em;
+    cursor: pointer;
+    z-index: 9999;
+    border-radius: 50%;
+}
 
 .nav-open i {
     display: block;
@@ -343,7 +351,7 @@ strong {
 .nav-open i:nth-child(3) {
     margin-top: 4px;
 }
-}
+
 
 #nav:checked + .nav-open {
     transform: rotate(45deg);
@@ -456,6 +464,12 @@ strong {
         box-shadow: 5px 5px 10px #999;
 
     }
+    h7{
+    font-size: 6em;
+    line-height: 12.75em;
+    text-align: center;
+    margin: 1em;
+}
 
 
     /*.about{
@@ -494,7 +508,7 @@ strong {
 -----------------------------------------------------------------------------*/
 .content {
     background: #fff;
-  
+
 }
 
 .gif {
@@ -543,9 +557,10 @@ strong {
     height: auto;
 
 }
+
 .flex-container-front-page img {
 
-   width: 100%;
+    width: 100%;
 
 }
 
@@ -586,7 +601,7 @@ strong {
     width: 300px;
     text-align: center;
     margin: 0 auto;
-    word-wrap:break-word;
+    word-wrap: break-word;
 }
 
 .sliderfmp {
@@ -598,7 +613,7 @@ strong {
 .slides {
     display: flex;
     overflow-x: hidden;
-    word-wrap:break-word;
+    word-wrap: break-word;
     border-radius: 5px;
 
 }
@@ -739,7 +754,7 @@ strong {
 .play {
     text-align: center;
     width: 30%;
-   margin: auto;
+    margin: auto;
     color: #D41768;
     font-size: 3em;
 }
@@ -766,25 +781,29 @@ strong {
 @media only screen and (min-width : 1000px) {
     .slides img {
         width: 20%;
-        
-            
-        }
-    .slides > div{
+
+
+    }
+
+    .slides > div {
         height: 800px;
     }
-    .slidefmp-1{
+
+    .slidefmp-1 {
         height: 80%;
     }
-    
-    .feed{
+
+    .feed {
         margin: 1em;
         width: 3em;
     }
-     .move{
+
+    .move {
         margin: 1em;
-         width: 3em;
+        width: 3em;
     }
-    .play{
+
+    .play {
         margin: 1em;
         width: 3em;
     }
