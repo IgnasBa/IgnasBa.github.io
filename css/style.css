@@ -1,0 +1,681 @@
+/* Eric Meyer's CSS Reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* End of Eric Meyer's CSS Reset */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    font: 12px/18px Arial, sans-serif;
+
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 1000px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "noto serif JP", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: playful;
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.2em;
+    padding-top: 0.5em;
+
+}
+
+@font-face {
+    font-family: playful;
+    src: url("fonts/TajamukaScript.ttf");
+}
+
+h6 {
+    font-size: 13em;
+    margin: 0;
+    padding: 0;
+
+}
+
+h5 {
+    font-size: 25em;
+    margin: 0;
+    padding: 0;
+
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 2em;
+    padding: 2em;
+
+
+}
+
+hr {
+    width: 80%;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ff8e1c;
+    border: 0 none;
+
+}
+
+#justo {
+    text-align: center;
+    width: 100%;
+padding-top: 0;
+    font-size: 13vw;
+}
+
+#gambula {
+    text-align: center;
+    width: 100%;
+    font-size: 22vw;
+    padding-top: 0;
+
+}
+
+#quote {
+    text-align: center;
+    font-size: 5vw;
+    width: 100%;
+    padding-top: 0;
+
+}
+
+
+.pattern {
+    position: absolute;
+    margin-left: 0.3em;
+
+}
+
+.pattern2 {
+    position: absolute;
+    right: 0.3em;
+}
+.albumCover{
+    width: 20em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.albumCover2{
+    width: 20em;
+    height: 20em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+}
+.discoText1{
+    text-align: center;
+    padding-left: 25%;
+}
+
+.backgroundimg1,
+.backgroundimg2,
+.backgroundimg3,
+.backgroundimg4,
+.backgroundimg5 {
+    position: relative;
+    opacity: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+
+.backgroundimg1 {
+    background-image: url('../img/athletic_progression.jpg');
+    min-height: 100%;
+}
+
+.backgroundimg2 {
+    background-image: url('../img/justo_bass.jpg');
+    min-height: 60%;
+}
+
+.backgroundimg3 {
+    background-image: url('../img/athletic_progression_2.jpg');
+    min-height: 60%;
+}
+
+.backgroundimg4 {
+    background-image: url('../img/cafe_smaglos.jpg');
+    min-height: 60%;
+}
+
+.backgroundimg5 {
+    background-image: url('../img/justo_rehearsing.jpg');
+    min-height: 60%;
+}
+
+
+
+
+.hjemmestudie {
+    margin-bottom: 10%;
+}
+
+.billedtekst {
+    margin: 0 0 10% 0;
+}
+
+
+
+.section {
+    text-align: left;
+    padding: 5%;
+}
+
+.section h2 {
+    text-align: center;
+}
+
+
+
+
+.flexp {
+    text-align: justify;
+}
+.flexp2 {
+    text-align: center;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.heading {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: playful;
+    line-height: 12em;
+    color: #ffe393;
+    padding-top: 40vh;
+
+
+}
+
+
+
+#kontor {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    background: #282e34;
+    padding: 0;
+}
+
+#trommespil {
+    width: 100%;
+    margin: 0;
+    height: auto;
+    background: #282e34;
+    padding: 0;
+}
+
+
+#containerp4 {
+    max-width: 100%;
+    height: auto;
+}
+
+.flexfooter {
+    width: 100%;
+    margin: 5% 0;
+    padding: 0;
+}
+
+.flexlinks {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.flexlinks:hover {
+    text-decoration: underline;
+}
+
+.footerdiv {
+    margin: 0;
+    padding: 2%;
+}
+
+.flexAudio {
+    width: 80%;
+    height: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    
+
+}
+
+.profileImg {
+    height: 10em;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.containerp {
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    background-color: #ffe393;
+    padding: 5%;
+}
+
+.containerp p {
+    margin: 5px;
+}
+
+.justoPlaying {
+   
+
+    max-width: 100%;
+
+}
+
+.flexp {
+    margin: 5px;
+}
+.flexp2 {
+    margin: 5px;
+}
+
+.footer {
+    background-color: #483374;
+        height: 15em;
+    font-size: 1em;
+    color: #ffe393;
+}
+.footer h3{
+    padding-top: 10%;
+    padding-bottom: 0;
+}
+.footerImg{
+    margin: 2% 0 0 10%;
+}
+.text-pop-up-top {
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+    padding-top: 40px;
+	-webkit-animation: text-pop-up-top 2.1s linear infinite alternate-reverse forwards;
+	        animation: text-pop-up-top 2.1s linear infinite alternate-reverse forwards;
+}
+
+@media(min-width:768px) {
+
+    .backgroundimg1,
+    .backgroundimg2,
+    .backgroundimg3,
+    .backgroundimg4,
+    .backgroundimg5 {
+        background-attachment: fixed;
+    }
+
+    .welcome{
+        font-size: 2em;
+        text-align: center;
+        width: 100%;
+    }
+
+    .containerp {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #ffe393;
+        padding: 5%;
+    }
+
+    #containerp1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #containerp2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #containerp3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #containerp4 {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2% 0;
+        justify-content: center;
+
+    }
+
+    .flexh {
+        width: 100%;
+    }
+
+    .flexp {
+        width: 20%;
+        padding: 2% 5%;
+        text-align: left;
+    }
+    .flexp2 {
+        width: 20%;
+        padding: 2% 0 2% 12%;
+        text-align: left;
+        font-size: 2em;
+    }
+
+    .flexl {
+        width: 20%;
+        padding: 2% 0 2% 15%;
+        text-align: right;
+    }
+
+  
+    .hjemmestudie {
+        margin: 0 0 4% 0;
+    }
+
+    .justoPlaying {
+
+        margin-right: 0;
+
+    }
+
+    .profileImg {
+        position: absolute;
+        height: 30%;
+        width: auto;
+        
+        margin: 0;
+        padding-left: 10%;
+        padding-top: 5%;
+    }
+    
+    
+    .flexAudio {
+    width: 30%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    
+
+}
+    .albumCover{
+    width: 20%;
+    height: 20%;
+    margin-left: 10%;
+        margin-right: 10%;
+    margin-top: 2em;
+}
+.albumCover2{
+    width: 20%;
+    height: 20%;
+    margin-left: auto;
+    margin-right:10%;
+    margin-top: 0;
+}
+    .discoText1{
+    text-align: center;
+    padding-left: 25%;
+        padding-top: 3%;
+        text-align: left;
+        font-size: 2em;
+        padding-bottom: 0
+}
+
+    /* Video del */
+
+    #kontor {
+        width: 75%;
+        margin: 0 12.5%;
+        height: auto;
+        background: #282e34;
+        padding: 0;
+    }
+
+    #trommespil {
+        width: 75%;
+        margin: 5% 12.5% 0 12.5%;
+        height: auto;
+        background: #282e34;
+        padding: 0;
+    }
+
+    .videodel2 {
+        padding: 0;
+    }
+
+    .videodel1 {
+        padding-top: 0;
+        padding-bottom: 10%;
+
+    }
+
+    img.flexAudio {
+        opacity: .5;
+    }
+
+    img.flexAudio:hover {
+        opacity: 1;
+        transition: all .1s ease-in;
+    }
+
+   
+    #justo {
+        padding-right: 27vw;
+        padding-bottom: 13vh;
+        font-size: 13vw;
+    }
+
+    #gambula {
+        font-size: 22vw;
+        padding-right: 25vh;
+        padding-bottom: 4vh;
+    }
+
+    #quote {
+        font-size: 3vw;
+        padding-right: 30vw;
+    }
+    .footer{
+        height: 20em;
+    }
+    .footer h3{
+    padding-top: 2%;
+        
+        margin-top: 0;
+}
+    .pattern {
+    position: absolute;
+    margin-left: 1em;
+
+}
+
+.pattern2 {
+    position: absolute;
+    right: 1em;
+}
+    .flexp{
+        font-size: 1.5em;
+    }
+    .flexl{
+        font-size: 1.5em;
+    }
+.footerImg{
+    margin: 2% 0 0 22%;
+    
+}
+}
+
