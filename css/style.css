@@ -177,7 +177,7 @@ h2,
 h3,
 h4 {
     font-family: playful;
-    font-size: 80px;
+    font-size: 60px;
     width: 100%;
     text-align: center;
     padding-bottom: 0.2em;
@@ -191,14 +191,14 @@ h4 {
 }
 
 h6 {
-    font-size: 13em;
+    font-size: 11em;
     margin: 0;
     padding: 0;
 
 }
 
 h5 {
-    font-size: 25em;
+    font-size: 22em;
     margin: 0;
     padding: 0;
 
@@ -226,7 +226,7 @@ hr {
 #justo {
     text-align: center;
     width: 100%;
-padding-top: 0;
+    padding-top: 0;
     font-size: 13vw;
 }
 
@@ -257,21 +257,24 @@ padding-top: 0;
     position: absolute;
     right: 0.3em;
 }
-.albumCover{
+
+.albumCover {
     width: 20em;
     height: 20em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
 }
-.albumCover2{
+
+.albumCover2 {
     width: 20em;
     height: 20em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2em;
 }
-.discoText1{
+
+.discoText1 {
     text-align: center;
     padding-left: 25%;
 }
@@ -314,9 +317,6 @@ padding-top: 0;
     min-height: 60%;
 }
 
-
-
-
 .hjemmestudie {
     margin-bottom: 10%;
 }
@@ -325,29 +325,22 @@ padding-top: 0;
     margin: 0 0 10% 0;
 }
 
-
-
 .section {
     text-align: left;
     padding: 5%;
 }
-
 .section h2 {
     text-align: center;
 }
-
-
-
-
 .flexp {
     text-align: justify;
 }
+
 .flexp2 {
     text-align: center;
     padding-left: 30%;
     padding-right: 30%;
 }
-
 .heading {
     display: flex;
     flex-wrap: wrap;
@@ -356,11 +349,7 @@ padding-top: 0;
     line-height: 12em;
     color: #ffe393;
     padding-top: 40vh;
-
-
 }
-
-
 
 #kontor {
     width: 100%;
@@ -370,7 +359,7 @@ padding-top: 0;
     padding: 0;
 }
 
-#trommespil {
+#videoPlayer {
     width: 100%;
     margin: 0;
     height: auto;
@@ -413,8 +402,6 @@ padding-top: 0;
     margin-left: auto;
     margin-right: auto;
     margin-top: 1em;
-    
-
 }
 
 .profileImg {
@@ -437,7 +424,7 @@ padding-top: 0;
 }
 
 .justoPlaying {
-   
+
 
     max-width: 100%;
 
@@ -446,31 +433,28 @@ padding-top: 0;
 .flexp {
     margin: 5px;
 }
+
 .flexp2 {
     margin: 5px;
 }
 
 .footer {
     background-color: #483374;
-        height: 15em;
+    height: 15em;
     font-size: 1em;
     color: #ffe393;
 }
-.footer h3{
+
+.footer h3 {
     padding-top: 10%;
     padding-bottom: 0;
 }
-.footerImg{
+
+.footerImg {
     margin: 2% 0 0 10%;
 }
-.text-pop-up-top {
-    width: 100%;
-    height: auto;
-    margin-top: 45px;
-    padding-top: 40px;
-	-webkit-animation: text-pop-up-top 2.1s linear infinite alternate-reverse forwards;
-	        animation: text-pop-up-top 2.1s linear infinite alternate-reverse forwards;
-}
+
+
 
 @media(min-width:768px) {
 
@@ -482,7 +466,7 @@ padding-top: 0;
         background-attachment: fixed;
     }
 
-    .welcome{
+    .welcome {
         font-size: 2em;
         text-align: center;
         width: 100%;
@@ -528,6 +512,7 @@ padding-top: 0;
         padding: 2% 5%;
         text-align: left;
     }
+
     .flexp2 {
         width: 20%;
         padding: 2% 0 2% 12%;
@@ -541,7 +526,7 @@ padding-top: 0;
         text-align: right;
     }
 
-  
+
     .hjemmestudie {
         margin: 0 0 4% 0;
     }
@@ -556,44 +541,47 @@ padding-top: 0;
         position: absolute;
         height: 30%;
         width: auto;
-        
+
         margin: 0;
         padding-left: 10%;
         padding-top: 5%;
     }
-    
-    
-    .flexAudio {
-    width: 30%;
-    height: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
-    
 
-}
-    .albumCover{
-    width: 20%;
-    height: 20%;
-    margin-left: 10%;
+
+    .flexAudio {
+        width: 30%;
+        height: 30%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1em;
+
+
+    }
+
+    .albumCover {
+        width: 20%;
+        height: 20%;
+        margin-left: 10%;
         margin-right: 10%;
-    margin-top: 2em;
-}
-.albumCover2{
-    width: 20%;
-    height: 20%;
-    margin-left: auto;
-    margin-right:10%;
-    margin-top: 0;
-}
-    .discoText1{
-    text-align: center;
-    padding-left: 25%;
+        margin-top: 2em;
+    }
+
+    .albumCover2 {
+        width: 20%;
+        height: 20%;
+        margin-left: auto;
+        margin-right: 10%;
+        margin-top: 0;
+    }
+
+    .discoText1 {
+        text-align: center;
+        padding-left: 25%;
         padding-top: 3%;
         text-align: left;
         font-size: 2em;
         padding-bottom: 0
-}
+    }
 
     /* Video del */
 
@@ -605,7 +593,7 @@ padding-top: 0;
         padding: 0;
     }
 
-    #trommespil {
+    #videoPlayer {
         width: 75%;
         margin: 5% 12.5% 0 12.5%;
         height: auto;
@@ -632,7 +620,7 @@ padding-top: 0;
         transition: all .1s ease-in;
     }
 
-   
+
     #justo {
         padding-right: 27vw;
         padding-bottom: 13vh;
@@ -649,33 +637,38 @@ padding-top: 0;
         font-size: 3vw;
         padding-right: 30vw;
     }
-    .footer{
+
+    .footer {
         height: 20em;
     }
-    .footer h3{
-    padding-top: 2%;
-        
+
+    .footer h3 {
+        padding-top: 2%;
+
         margin-top: 0;
-}
+    }
+
     .pattern {
-    position: absolute;
-    margin-left: 1em;
+        position: absolute;
+        margin-left: 1em;
 
-}
+    }
 
-.pattern2 {
-    position: absolute;
-    right: 1em;
-}
-    .flexp{
+    .pattern2 {
+        position: absolute;
+        right: 1em;
+    }
+
+    .flexp {
         font-size: 1.5em;
     }
-    .flexl{
+
+    .flexl {
         font-size: 1.5em;
     }
-.footerImg{
-    margin: 2% 0 0 22%;
-    
-}
-}
 
+    .footerImg {
+        margin: 2% 0 0 22%;
+
+    }
+}
