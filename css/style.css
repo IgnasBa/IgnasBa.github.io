@@ -671,7 +671,12 @@ hr {
         margin: 2% 0 0 22%;
 
     }
-        #bio{
-        font-size: 1em;
+    .bio{
+        font-size: 1.5em;
+    }
+    .bioflex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
