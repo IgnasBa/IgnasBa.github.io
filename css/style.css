@@ -1,682 +1,528 @@
-/* Eric Meyer's CSS Reset */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+* {
     margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+}
+@font-face{
+    font-family: "GothicBT";
+    src: url("fonts/gothic.ttf");
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/* End of Eric Meyer's CSS Reset */
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-    display: block;
-}
-
-body {
-    font: 12px/18px Arial, sans-serif;
-
-}
-
-html,
-body {
-    height: 100%;
-}
-
-.wrapper {
+#startScreen {
     width: 100%;
-    min-width: 1000px;
+    height: auto;
 }
 
-body,
-html {
-    height: 100%;
-    margin: 0;
-    font-size: 16px;
-    font-family: "noto serif JP", sans-serif;
+.background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    -webkit-animation: slide 20s linear infinite;
+}
+
+#points {
+    font-size: 1.5em;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+#points2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    visibility: hidden;
+}
+
+li {}
+
+#logo {
+    width: 30%;
+    height: auto;
+    float: right;
+}
+
+#gymHeading {
+    position: absolute;
+    width: 62.5%;
+    height: 10%;
+    background: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 7em;
+    margin-left: 18.75%;
+    margin-right: 20%;
+    margin-top: 7%;
+
+}
+
+#finish {
+    position: absolute;
+    width: 60%;
+    height: 22%;
+    background: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 7em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    visibility: hidden;
+}
+
+#finish2 {
+    position: absolute;
+    width: 60%;
+    height: 11%;
+    background: yellow;
+    border: 2px solid black;
+    display: inline-block;
+    line-height: 7em;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    visibility: hidden;
+}
+
+h2 {
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+
+#introduction {
+    position: absolute;
+    width: 60%;
+    height: 45%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 18.75%;
+    margin-right: 20%;
+    margin-top: 15%;
+    font-family: GothicBT, sans-serif;
     font-weight: 400;
-    line-height: 1.8em;
-    color: #666;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    font-family: playful;
-    font-size: 60px;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 0.2em;
-    padding-top: 0.5em;
-
-}
-
-@font-face {
-    font-family: playful;
-    src: url("fonts/TajamukaScript.ttf");
-}
-
-h6 {
-    font-size: 11em;
-    margin: 0;
-    padding: 0;
-
-}
-
-h5 {
-    font-size: 22em;
-    margin: 0;
-    padding: 0;
-
-}
-
-p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    line-height: 2em;
-    padding: 2em;
-
-
-}
-
-hr {
-    width: 80%;
-    height: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #ff8e1c;
-    border: 0 none;
-
-}
-
-#justo {
-    text-align: center;
-    width: 100%;
-    padding-top: 0;
-    font-size: 13vw;
-}
-
-#gambula {
-    text-align: center;
-    width: 100%;
-    font-size: 22vw;
-    padding-top: 0;
-
-}
-
-#quote {
-    text-align: center;
-    font-size: 5vw;
-    width: 100%;
-    padding-top: 0;
-
-}
-
-
-.pattern {
-    position: absolute;
-    margin-left: 0.3em;
-
-}
-
-.pattern2 {
-    position: absolute;
-    right: 0.3em;
-}
-
-.albumCover {
-    width: 20em;
-    height: 20em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-.albumCover2 {
-    width: 20em;
-    height: 20em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-}
-
-.discoText1 {
-    text-align: center;
-    padding-left: 25%;
-}
-
-.backgroundimg1,
-.backgroundimg2,
-.backgroundimg3,
-.backgroundimg4,
-.backgroundimg5 {
-    position: relative;
-    opacity: 1;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-}
-
-.backgroundimg1 {
-    background-image: url('../img/athletic_progression.jpg');
-    min-height: 100%;
-}
-
-.backgroundimg2 {
-    background-image: url('../img/justo_bass.jpg');
-    min-height: 60%;
-}
-
-.backgroundimg3 {
-    background-image: url('../img/athletic_progression_2.jpg');
-    min-height: 60%;
-}
-
-.backgroundimg4 {
-    background-image: url('../img/cafe_smaglos.jpg');
-    min-height: 60%;
-}
-
-.backgroundimg5 {
-    background-image: url('../img/justo_rehearsing.jpg');
-    min-height: 60%;
-}
-
-.hjemmestudie {
-    margin-bottom: 10%;
-}
-
-.billedtekst {
-    margin: 0 0 10% 0;
-}
-
-.section {
+    font-style: normal;
+    font-size: 1.5em;
     text-align: left;
-    padding: 5%;
-}
-.section h2 {
-    text-align: center;
-}
-.flexp {
-    text-align: justify;
-}
-
-.flexp2 {
-    text-align: center;
-    padding-left: 30%;
-    padding-right: 30%;
-}
-.heading {
-    display: flex;
-    flex-wrap: wrap;
+    vertical-align: middle;
+    align-items: center;
     justify-content: center;
-    font-family: playful;
-    line-height: 12em;
-    color: #ffe393;
-    padding-top: 40vh;
+    line-height: 1.6em;
+    padding-left: 2em;
+}
+#text{
+     text-align: center;
+padding: 15px;
+}
+#pointsDiv {
+    background: #c265cf;
+    border: 2px solid black;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    width: 12%;
+    position: absolute;
+    margin-left: 80%;
+    padding: 15px 32px;
+    visibility: hidden;
+    margin-top: 1%;
+    height: 5%;
 }
 
-#kontor {
-    width: 100%;
-    margin: 0;
-    height: auto;
-    background: #282e34;
-    padding: 0;
+#pointsDiv2 {
+    background: #00fffb;
+    border: 2px solid black;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    width: 12%;
+    position: absolute;
+    margin-left: 2%;
+    padding: 15px 32px;
+    visibility: hidden;
+    margin-top: 1%;
+    height: 5%;
 }
 
-#videoPlayer {
-    width: 100%;
-    margin: 0;
-    height: auto;
-    background: #282e34;
-    padding: 0;
-}
-
-
-#containerp4 {
-    max-width: 100%;
-    height: auto;
-}
-
-.flexfooter {
-    width: 100%;
-    margin: 5% 0;
-    padding: 0;
-}
-
-.flexlinks {
-    width: 100%;
+#chooseLevel {
+    position: absolute;
+    width: 40%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 30%;
+    margin-right: 20%;
+    margin-top: 15%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
     display: flex;
+    align-items: center;
     justify-content: center;
+    display: none;
+}
+
+#easy {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 35%;
+    margin-top: 22%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#hard {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 35%;
+    margin-top: 32%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#medium {
+    position: absolute;
+    width: 30%;
+    height: 8%;
+    background: white;
+    border: 2px solid black;
+    margin-left: 35%;
+    margin-top: 27%;
+    font-family: aviano-future, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+#playlistHype {
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 21%;
+    margin-left: 25%;
+}
+
+#playlistMotivation {
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 31%;
+    margin-left: 35%;
+}
+
+#playlistDale {
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 21%;
+    margin-left: 45%;
+}
+
+#playlistSummer {
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 31%;
+    margin-left: 55%;
+}
+
+#playlistPower {
+    display: none;
+    position: absolute;
+    width: 10%;
+    height: auto;
+    margin-top: 21%;
+    margin-left: 65%;
+}
+
+#arrow {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 81.5%;
+    border: 2px solid black;
+}
+
+#arrow:active {
+    transform: translateY(4px);
+
+}
+
+#start:active {
+    transform: translateY(4px);
+
+}
+
+#start2:active {
+    transform: translateY(4px);
+
+}
+
+#playlistHype:active {
+    transform: translateY(4px);
+}
+
+#playlistMotivation:active {
+    transform: translateY(4px);
+}
+
+#playlistDale:active {
+    transform: translateY(4px);
+}
+
+#playlistSummer:active {
+    transform: translateY(4px);
+}
+
+#playlistPower:active {
+    transform: translateY(4px);
+}
+
+#safeTimer {
+    visibility: hidden;
+    background-color: yellow;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
     text-decoration: none;
-    color: #ddd;
+    display: inline-block;
+    font-size: 3em;
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 44%;
+    width: 10%;
+    height: 5%;
 }
 
-.flexlinks:hover {
-    text-decoration: underline;
+#easy:hover {
+    background-color: yellow
 }
 
-.footerdiv {
-    margin: 0;
-    padding: 2%;
+#medium:hover {
+    background-color: yellow
 }
 
-.flexAudio {
-    width: 80%;
-    height: 40%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1em;
+#hard:hover {
+    background-color: yellow
 }
 
-.profileImg {
-    height: 10em;
-    width: 10em;
-    margin-left: auto;
-    margin-right: auto;
+h1 {
+    text-align: center;
+    vertical-align: middle;
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 5em;
 }
 
-.containerp {
-    display: flex;
-    flex-wrap: wrap;
-    word-wrap: break-word;
-    background-color: #ffe393;
-    padding: 5%;
+button {
+    visibility: hidden;
+    background-color: yellow;
+    border: 2px solid black;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 3em;
+    font-family: aviano-future, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    position: absolute;
+    margin-top: 28%;
+    margin-left: 44.3%;
 }
 
-.containerp p {
-    margin: 5px;
+@keyframes shake {
+    0% {
+        transform: skewX(-15deg);
+    }
+
+    5% {
+        transform: skewX(15deg);
+    }
+
+    10% {
+        transform: skewX(-15deg);
+    }
+
+    15% {
+        transform: skewX(15deg);
+    }
+
+    20% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
 }
 
-.justoPlaying {
+.apply-shake {
+    animation: .8s shake infinite alternate;
+}
 
+.list {
+    animation: createBox 10s;
+}
 
-    max-width: 100%;
+.list2 {
+    animation: createBox 10s;
+}
+
+@keyframes createBox {
+    0% {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* slider */
+/* The switch - the box around the slider */
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-left: 14em;
+    top: 4px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 
 }
 
-.flexp {
-    margin: 5px;
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-.flexp2 {
-    margin: 5px;
+input:checked + .slider {
+    background-color: #2196F3;
 }
 
-.footer {
-    background-color: #483374;
-    height: 15em;
-    font-size: 1em;
-    color: #ffe393;
+input:focus + .slider {
+    box-shadow: 0 0 1px #2193F3;
 }
 
-.footer h3 {
-    padding-top: 10%;
-    padding-bottom: 0;
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
 }
 
-.footerImg {
-    margin: 2% 0 0 10%;
+#backgroundClear {
+    visibility: hidden;
 }
 
+#backgroundCloudy {
+    visibility: hidden;
+}
 
+#backgroundRain {
+    visibility: hidden;
+}
 
-@media(min-width:768px) {
+#backgroundThunderstorm {
+    visibility: hidden;
+}
 
-    .backgroundimg1,
-    .backgroundimg2,
-    .backgroundimg3,
-    .backgroundimg4,
-    .backgroundimg5 {
-        background-attachment: fixed;
-    }
-
-    .welcome {
-        font-size: 2em;
-        text-align: center;
-        width: 100%;
-    }
-
-    .containerp {
-        display: flex;
-        flex-wrap: wrap;
-        background-color: #ffe393;
-        padding: 5%;
-    }
-
-    #containerp1 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #containerp2 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #containerp3 {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #containerp4 {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        padding: 2% 0;
-        justify-content: center;
-
-    }
-
-    .flexh {
-        width: 100%;
-    }
-
-    .flexp {
-        width: 20%;
-        padding: 2% 5%;
-        text-align: left;
-    }
-
-    .flexp2 {
-        width: 20%;
-        padding: 2% 0 2% 12%;
-        text-align: left;
-        font-size: 2em;
-    }
-
-    .flexl {
-        width: 20%;
-        padding: 2% 0 2% 15%;
-        text-align: right;
-    }
-
-
-    .hjemmestudie {
-        margin: 0 0 4% 0;
-    }
-
-    .justoPlaying {
-
-        margin-right: 0;
-
-    }
-
-    .profileImg {
-        position: absolute;
-        height: 30%;
-        width: auto;
-
-        margin: 0;
-        padding-left: 10%;
-        padding-top: 5%;
-    }
-
-
-    .flexAudio {
-        width: 30%;
-        height: 30%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1em;
-
-
-    }
-
-    .albumCover {
-        width: 20%;
-        height: 20%;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 2em;
-    }
-
-    .albumCover2 {
-        width: 20%;
-        height: 20%;
-        margin-left: auto;
-        margin-right: 10%;
-        margin-top: 0;
-    }
-
-    .discoText1 {
-        text-align: center;
-        padding-left: 25%;
-        padding-top: 3%;
-        text-align: left;
-        font-size: 2em;
-        padding-bottom: 0
-    }
-
-    /* Video del */
-
-    #kontor {
-        width: 75%;
-        margin: 0 12.5%;
-        height: auto;
-        background: #282e34;
-        padding: 0;
-    }
-
-    #videoPlayer {
-        width: 75%;
-        margin: 5% 12.5% 0 12.5%;
-        height: auto;
-        background: #282e34;
-        padding: 0;
-    }
-
-    .videodel2 {
-        padding: 0;
-    }
-
-    .videodel1 {
-        padding-top: 0;
-        padding-bottom: 10%;
-
-    }
-
-    img.flexAudio {
-        opacity: .5;
-    }
-
-    img.flexAudio:hover {
-        opacity: 1;
-        transition: all .1s ease-in;
-    }
-
-
-    #justo {
-        padding-right: 27vw;
-        padding-bottom: 13vh;
-        font-size: 13vw;
-    }
-
-    #gambula {
-        font-size: 22vw;
-        padding-right: 25vh;
-        padding-bottom: 4vh;
-    }
-
-    #quote {
-        font-size: 3vw;
-        padding-right: 30vw;
-    }
-
-    .footer {
-        height: 20em;
-    }
-
-    .footer h3 {
-        padding-top: 2%;
-
-        margin-top: 0;
-    }
-
-    .pattern {
-        position: absolute;
-        margin-left: 1em;
-
-    }
-
-    .pattern2 {
-        position: absolute;
-        right: 1em;
-    }
-
-    .flexp {
-        font-size: 1em;
-    }
-
-    .flexl {
-        font-size: 1em;
-    }
-
-    .footerImg {
-        margin: 2% 0 0 22%;
-
-    }
-    .bio{
-        font-size: 1em;
-    }
-    .bioflex{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+#backgroundSnow {
+    visibility: hidden;
+}
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-center 0.7s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }

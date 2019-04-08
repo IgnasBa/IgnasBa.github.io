@@ -1,103 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Justo Gambula, Athletic Progression, bass, alternative hiphop, hiphop, experimental">
-    <meta name="description" content="A Web Documentary about a musician Justo Gambula.">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <title>Web Documentary - Justo Gambula</title>
+    <meta charset="UTF-8">
+    <title>JS click on odd balls</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oqc6puq.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
+
 <body>
-    <img class="pattern" src="img/african_decoration.png" alt="african pattern decoration">
-    <img class="pattern2" src="img/african_decoration.png" alt="african pattern decoration">
-
-    <div class="backgroundimg1">
-        <div class="heading">
-            <h1 id="justo">Justo</h1>
-            <h1 id="gambula">Gambula</h1>
-            <h3 id="quote">"Music is the dream"</h3>
-
+    <div id="startScreen">
+        <div id="main">
+            <img src="img/background.png" alt="background image" class="background" id="background">
+            <img src="img/backgroundClear.jpg" alt="background image clear" class="background" id="backgroundClear">
+            <img src="img/backgroundCloudy.png" alt="background image cloudy" class="background" id="backgroundCloudy">
+            <img src="img/backgroundRain.jpg" alt="background image rain" class="background" id="backgroundRain">
+            <img src="img/backgroundSnow.png" alt="background image snow" class="background" id="backgroundSnow">
+            <img src="img/backgroundThunderstorm.jpg" alt="background image thunderstorm" class="background" id="backgroundThunderstorm">
+            <img src="img/logo.png" alt="logo" id="logo">
+            <img src="img/arrow.jpg" id="arrow" alt="arrow">
+            <audio id="dont" src="audio/dont_call_me_up.mp3"></audio>
+            <audio volume="0.1" id="nonstop" src="audio/Nonstop.mp3"></audio>
+            <audio id="mind" src="audio/in_my_mind.mp3"></audio>
+            <audio id="bap" src="audio/bap.mp3"></audio>
+            <audio  id="bip" src="audio/bip.mp3"></audio>
+            
+            <div id="gymHeading">
+                <h1>INTERACTIVE GYM</h1>
+            </div>
+            <div id="finish">
+                <h1>Congratulations!<br> Warmup done</h1>
+            </div>
+            <div id="finish2" class="scale-up-center">
+                <h1>Warmup failed</h1>
+            </div>
+            <div id="introduction">
+                <p id="text"><b>WELCOME!</b> <br>Play the game which will help you to <b>WARM UP! </b><br><br>
+                    <b>INSTRUCTIONS:</b></p> <p> 
+                   &#9679; Select game difficulty*, choose your playlist and if you want play multiplayer.<br>
+                    &#9679; Touch colored bubbles on the wall to earn points.<br>
+                   &#9679; Points will be counted in the right screen corner. <br>
+                    &#9679; If you miss a bubble, you loose.<br>
+                    *Choose a level according to your needs. The higher level you choose the faster circles will come and disappear.</p>
+            </div>
+            <div id="chooseLevel" class="scale-up-center">
+                <h2>Choose the level</h2>
+            </div>
+            <div id="easy" class="scale-up-center">
+                <h2>Easy</h2>
+            </div>
+            <div id="medium" class="scale-up-center">
+                <h2>Medium</h2>
+            </div>
+            <div id="hard" class="scale-up-center">
+                <h2>Hard</h2>
+            </div>
+            <img src="img/PlaylistHype.jpg" id="playlistHype" alt="Motivation playlist" class="scale-up-center">
+            <img src="img/PlaylistMotivation.jpg" id="playlistMotivation" alt="Motivation playlist" class="scale-up-center">
+            <img src="img/PlaylistDale.png" id="playlistDale" alt="Dale Reggeaton playlist" class="scale-up-center">
+            <img src="img/PlaylistSummer.jpg" id="playlistSummer" alt="Summer playlist" class="scale-up-center">
+            <img src="img/PlaylistPower.jpg" id="playlistPower" alt="Power playlist" class="scale-up-center">
+            <ul id="elementArea"></ul>
+            <ul id="elementArea2"></ul>
+            <div id=pointsDiv>
+                <p id="points">Score: 0</p>
+            </div>
+            <div id=pointsDiv2>
+                <p id="points2">Score: 0</p>
+            </div>
+            <div id="safeTimer">
+                <p id="safeTimerDisplay">00:30</p>
+            </div>
+            <button id="start">Start</button>
+            <button id="start2">Start</button>
+            <div id="slider2">
+                <h2>2 Player</h2>
+                <label class="switch">
+                    <input id="inputs" type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </div>
     </div>
-    <section class="containerp">
-        <h2>WELCOME</h2>
-        <img class="profileImg" src="img/justo_portrait.png" alt="Justo Gambula protrait">
-        <p class="welcome">Justo Gambula is a 22 year old musician.<br><br>He plays the bass as a sideman.<br><br>His music is influenced by his Tanzanian roots</p>
-        <video controls id="kontor" loop>
-            <source src="video/video1.mp4" />
-        </video>
-    </section>
-    <div class="backgroundimg2">
-    </div>
-    <section class="containerp" id="bio">
-        <h2>Biography</h2>
-        <div class="bioflex">
-        <p class="flexp">Justo is originally from Tanzania and he came to Denmark with his mother. She came to Denmark because of music and her dream of opening an african camp.
-            <br><br> When Justo was around 5 years old he had his 1st encounter with music in his father’s garage. There he found his guitar and like every curious child, he tried to see how it works.
-        </p>
-        <img class="justoPlaying fleximg" src="img/justo_playing.png " alt="Justo playing a bass guitar">
-        <p class="flexl">Music was always in his family, mother singing, father playing different instruments, Justo’s older siblings playing instruments and singing as well. It was pretty natural to pick up something in this field, especially since he was 6 yo he started playing together with his family members as a way of entertainment and having a good time.” I don’t remember not playing music” - Justo Gambula.
-        </p>
-        </div>
-        <hr>
-
-    </section>
-    <div class="backgroundimg3">
-    </div>
-    <section class="containerp" id="disco">
-        <h2>Discography</h2>
-        <img class="albumCover" src="img/album_cover.jpg" alt="Dark Smoke album cover">
-        <p class="discoText1">Band: Athletic Progression<br><br>Title: Dark Smoke<br><br>Released: January 2019</p>
-        <hr>
-        <p class="discoText1">Band: Various<br><br>Title: Aarhus Tager Den Tilbage<br><br>Released: May 2016</p>
-        <img class="albumCover2" src="img/album_cover_2.jpg" alt="Aarhus Tager Den Tilbage album cover">
-        <div class="section videodel2 flexh">
-            <video controls id="videoPlayer" loop>
-                <source src="video/video2.mp4" />
-            </video>
-
-        </div>
-    </section>
-    <div class="backgroundimg4">
-    </div>
-    <section class="containerp" id="listen">
-        <h2> Listen!</h2>
-        <audio id="audio1" src="audio/CloudyDay.mp3"></audio>
-        <img class="flexAudio" src="img/justo_with_bass.jpg" alt="Justo playing a bass guitar" onmouseover="document.getElementById('audio1').play()" onmouseout="document.getElementById('audio1').pause()">
-        <audio id="audio2" src="audio/ClubBerlin.mp3"></audio>
-        <img class="flexAudio" src="img/justo_foot.jpg" alt="Justo picture with his feet up" onmouseover="document.getElementById('audio2').play()" onmouseout="document.getElementById('audio2').pause()">
-    
-    </section>
-    <div class="backgroundimg5">
-  
-    </div>
-    <section class="containerp" id="future">
-        <h2>Future events</h2>
-        <hr>
-        <p class="flexp2">January 25th, 2019</p>
-        <p class="flexp2">Copenhagen, Denmark</p>
-        <p class="flexp2">Athletic Progression</p>
-        <hr>
-        <p class="flexp2">March 11th, 2019</p>
-        <p class="flexp2">Aarhus, Denmark</p>
-        <p class="flexp2">Justo Gambula</p>
-        <hr>
-        <p class="flexp2">August 15th-17th, 2019</p>
-        <p class="flexp2">Thy, Denmark</p>
-        <p class="flexp2">Athletic Progression</p>
-        <hr>
-    </section>
-    <footer class="footer ">
-        <a href="https://www.facebook.com/AthleticProgression4/"><img class="footerImg" src="img/facebook_icon.png" alt="facebook icon"></a>
-        <a href="https://www.instagram.com/athleticprogressionmusic/"><img class="footerImg" src="img/instagram_icon.png" alt="instagram icon"></a>
-        <a href="https://soundcloud.com/athleticprogression"><img class="footerImg" src="img/soundcloud_icon.png" alt="soundcloud icon"></a>
-        <h3>#JustoGambula</h3>
-    </footer>
-    <script src="/JS/script.js"></script>
-
+    <script src="js/script.js"></script>
 </body>
-
 </html>
