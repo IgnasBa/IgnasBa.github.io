@@ -1,7 +1,7 @@
 // game points
 var points = 0;
 var points2 = 0;
-var time = 60 / 2; // your time in seconds here
+var time = 90 / 2; // your time in seconds here
 var play = 0;
 var coop = 0;
 var url = "http://api.openweathermap.org/data/2.5/weather?q=copenhagen&units=metric&APPID=b94ddb9d71b693ed8440e7263c21d6f6";
@@ -40,6 +40,7 @@ function createElements() {
         li.style.top = y + "px";
         li.style.position = "absolute";
         li.style.left = x + "px";
+        li.style.boxShadow = "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)";
 
         li.style.border = "1px solid blue";
 
@@ -70,11 +71,11 @@ function createElements() {
             document.getElementById("logo").style.visibility = "visible";
             document.getElementById("finish2").style.visibility = "visible";
             document.getElementById("finish2").style.display = "block";
-        button2.classList.add("scale-up-center");
+            button2.classList.add("scale-up-center");
             button2.style.visibility = "visible";
             button2.innerHTML = "Try again";
             button2.style.marginLeft = "41.5%";
-        document.getElementById("chosen").pause();
+            document.getElementById("chosen").pause();
             if (coop > 0) {
                 document.getElementById("pointsDiv").style.marginTop = "18%";
                 document.getElementById("pointsDiv").style.marginLeft = "60%";
@@ -85,7 +86,7 @@ function createElements() {
             } else {
                 document.getElementById("pointsDiv").style.marginTop = "18%";
                 document.getElementById("pointsDiv").style.marginLeft = "44%";
-                            document.getElementById("pointsDiv").classList.add("scale-up-center");
+                document.getElementById("pointsDiv").classList.add("scale-up-center");
             }
         });
     /* console.log(elements);*/
@@ -125,6 +126,7 @@ function createElements2() {
         li.style.top = y + "px";
         li.style.position = "absolute";
         li.style.left = x + "px";
+        li.style.boxShadow = "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)";
 
         li.style.border = "1px solid blue";
 
@@ -287,7 +289,7 @@ button2.addEventListener('click', function () {
     display = document.querySelector('#safeTimerDisplay');
     document.getElementById("safeTimer").style.visibility = "visible";
     document.getElementById("pointsDiv").style.marginTop = "1%";
-    document.getElementById("pointsDiv").style.marginLeft = "85%";
+    document.getElementById("pointsDiv").style.marginLeft = "82%";
     document.getElementById("pointsDiv2").style.marginTop = "1%";
     document.getElementById("pointsDiv2").style.marginLeft = "2%";
     document.getElementById("finish2").style.visibilty = "hidden";
@@ -312,7 +314,7 @@ var difficulty = 0;
 
 document.getElementById("easy").addEventListener('click', function (e) {
 
-    document.getElementById("chooseLevel").innerHTML = "MUSIC PLAYLIST";
+    document.getElementById("chooseLevel").innerHTML = "<h2>MUSIC PLAYLIST</h2>";
     document.getElementById("easy").style.display = "none";
     document.getElementById("medium").style.display = "none";
     document.getElementById("hard").style.display = "none";
@@ -325,7 +327,7 @@ document.getElementById("easy").addEventListener('click', function (e) {
 })
 document.getElementById("medium").addEventListener('click', function (e) {
 
-    document.getElementById("chooseLevel").innerHTML = "MUSIC PLAYLIST";
+    document.getElementById("chooseLevel").innerHTML = "<h2>MUSIC PLAYLIST</h2>";
     document.getElementById("chooseLevel").classList.remove("scale-up-center");
     document.getElementById("chooseLevel").classList.add("scale-up-center");
     document.getElementById("easy").style.display = "none";
@@ -340,7 +342,7 @@ document.getElementById("medium").addEventListener('click', function (e) {
 })
 document.getElementById("hard").addEventListener('click', function (e) {
 
-    document.getElementById("chooseLevel").innerHTML = "MUSIC PLAYLIST";
+    document.getElementById("chooseLevel").innerHTML = "<h2>MUSIC PLAYLIST</h2>";
     document.getElementById("easy").style.display = "none";
     document.getElementById("medium").style.display = "none";
     document.getElementById("hard").style.display = "none";
@@ -428,14 +430,13 @@ function startTimer(duration, display) {
             document.getElementById("finish").classList.add("scale-up-center");
             document.getElementById("pointsDiv").classList.add("scale-up-center");
             document.getElementById("chosen").pause();
-            if(coop > 0)
-                {
-                                  document.getElementById("pointsDiv").style.marginTop = "22%";
+            if (coop > 0) {
+                document.getElementById("pointsDiv").style.marginTop = "22%";
                 document.getElementById("pointsDiv").style.marginLeft = "60%";
                 document.getElementById("pointsDiv2").style.marginTop = "22%";
                 document.getElementById("pointsDiv2").style.marginLeft = "28%";
-                    document.getElementById("pointsDiv2").classList.add("scale-up-center");
-                }
+                document.getElementById("pointsDiv2").classList.add("scale-up-center");
+            }
 
 
             // timer = duration; // uncomment this line to reset timer automatically after reaching 0
@@ -475,5 +476,13 @@ function showData(jsonData) {
         document.getElementById("background").style.visibility = "hidden";
         document.getElementById("backgroundThunderstorm").style.visibility = "visible";
     }
+}
 
+setTimeout(intro, 2000);
+setTimeout(intro2, 5000);
+function intro(){
+        document.querySelector(".proo").style.display = "block";
+}
+function intro2(){
+        document.querySelector("#pro").className = "slide-out-top";
 }
