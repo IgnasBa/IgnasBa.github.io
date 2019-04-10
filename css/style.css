@@ -527,7 +527,7 @@ input:checked + .slider:before {
 }
 
 #backgroundClear {
-    visibility: hidden;
+
 }
 
 #backgroundCloudy {
