@@ -252,6 +252,7 @@ var button = document.getElementById("start");
 button.addEventListener('click', function () {
     document.getElementById("chosen").play();
     document.getElementById("chosen").volume = 0.5;
+    document.getElementById("backgroundClear").style.visibility = "visible";
     play = 0;
     button.style.visibility = "hidden";
     collectData(url, showData);
