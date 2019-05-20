@@ -1,0 +1,349 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+.wrapper {
+	width: 100%;
+	min-width: 300px;
+}
+/* Remove the underline from links */
+a {
+    text-decoration: none;
+}
+h1{
+    font-size: 2em;
+    color: white;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+.margin{
+    height: 100px;
+}
+
+
+nav{
+    background-color: #434c8e;
+    height: 100px;
+}
+li {
+    font-size: 3em;
+}
+#circle_logo{
+    margin-left: 5em;
+}
+@media only screen and (max-width: 992px){
+    #circle_logo{
+    margin-left: 0em;
+}
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+}
+/* First Section-------------------------------------------------------------*/
+#bgConstruction {
+    width: 100%;
+    height: auto;
+}
+#firstSection {
+    padding-top: 100px;
+    background-image: url(../img/backgroundConstruction.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+#firstSection p {
+    font-size: 1.5em;
+
+    
+    
+}
+#longLogo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 4em;
+    
+}
+/* Second Section------------------------------------------------------------*/
+#secondSection {
+    background: #434c8e;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+    
+}
+#aboutCompanyArticle {
+    display: inline-block;
+    width: 60%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow:hidden;
+}
+#aboutOwnerArticle {
+    display: inline-block;
+    position: absolute;
+    width: 60%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    word-wrap:break-word;
+    overflow:hidden;
+}
+/* Displaying text aligned verticallly and horizontaly in a div */
+.parent {
+    display: table;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+.parent2 {
+    display: table;
+    height: 300px;
+    width: 50%;
+    margin: auto;
+    padding: 0;
+}
+.child {
+    height: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+.child2 {
+    width: 100%;
+    height: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* Displaying text aligned verticallly and horizontaly in a div */
+#aboutCompanyArticle p{
+    color: white;
+    padding: 4%;
+    
+}
+#aboutOwnerArticle p{
+    color: white;
+    padding: 4%;
+    word-wrap:break-word;
+    
+}
+#aboutCompanyAside {
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    display: inline-block;
+    width: 39%;
+    background-image: url(../img/Ourcompany.jpg);
+        background-position: center;
+    background-size: cover;
+    height: 300px;
+    line-height: 2em;
+}
+#aboutOwnerAside {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 40%;
+    background-image: url(../img/Alex.jpg);
+        background-position: center;
+    background-size: cover;
+    height: 295px;
+    line-height: 2em;
+}
+/* Third Section-------------------------------------------------------------*/
+#thirdSection{
+    background: #434c8e;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow:hidden;
+}
+#thirdSection h1{
+    padding-top: 30px;
+}
+.circleBase{
+    border-radius: 50%;
+}
+@media only screen and (min-width: 768px){
+    
+    #thirdSection{
+    height: 400px;
+}
+}
+@media only screen and (min-width: 1220px){
+    
+    #thirdSection{
+    height: 450px;
+}
+}
+
+/* Fourth Section-------------------------------------------------------------*/
+#fourthSection{
+   background: #434c8e;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Collapsible from W3 Schools https://www.w3schools.com/howto/howto_js_collapsible.asp*/
+/* Fifth Section-------------------------------------------------------------*/
+#fifthSection {
+        background: #434c8e;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow:hidden;
+}
+#fifthSection h1{
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container img{
+    width: 3.5em;
+    height: 100%;
+}
+.flex-container > div {
+  width: 32%;
+  margin: 10px;
+    margin-top: 40px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.employessP{
+    display: inline-block;
+    width: 32%;
+    color: white;
+}
+@media only screen and (min-width: 768px){
+ 
+.flex-container img{
+    width: 7em;
+    height: 100%;
+}
+    #fifthSection h1{
+    padding-top: 10px;
+}
+ 
+}
+@media only screen and (min-width: 1220px){
+ 
+.flex-container img{
+    width: 10em;
+    height: 100%;
+}
+    #fifthSection h1{
+    padding-top: 10px;
+}
+    #fifthSection{
+        height: 450px;
+    }
+ 
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 100px;
+	background: #e8cd5c;
+}
+#fb{
+    width: 6em;
+    position: relative;
+    float: right;
+    padding-top:1.5em;
+    margin-right: 2em;
+}
+#ig{
+    width: 9em;
+    position: relative;
+float: right;
+    padding-top: 1em;
+}
