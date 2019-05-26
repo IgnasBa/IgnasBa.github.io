@@ -1,0 +1,698 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Eric Meyer's CSS Reset */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 12px/18px Arial, sans-serif;
+}
+.wrapper {
+	width: 100%;
+	min-width: 300px;
+}
+/* Remove the underline from links */
+a {
+    text-decoration: none;
+}
+
+/* Fonts  */
+h1{
+    font-size: 3em;
+    font-weight: 700;
+    line-height: 1em;
+    color: #242361;
+    text-align: center;
+    padding-top: 2em;
+}
+h2{
+    font-size: 1em;
+    font-weight: 700;
+    color: #242361;
+}
+h3{
+    font-size: 1.75em;
+    font-weight: 700;
+    color: #242361;
+}
+p{
+    color: #242361;
+    font-size: 1em;
+}
+h4{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fffcf2;
+}
+h5{
+    font-size: 4em;
+    font-weight: 700;
+    color: #fffcf2;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.header a{
+    color: #FFFCF2;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 999;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+.margin{
+    
+}
+
+
+
+nav{
+    background-color: #726cba;
+    height: 100px;
+    opacity: 0.9;
+}
+li {
+    font-size: 3em;
+}
+.left li {
+   
+}
+.right li {
+   
+}
+
+@media only screen and (max-width: 1260px){
+    
+ .left li {
+    margin-left: 5vw;
+}
+.right li {
+    margin-right: 5vw;
+}
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.content {
+}
+/* First Section-------------------------------------------------------------*/
+#bgConstruction {
+    width: 100%;
+    height: auto;
+}
+#firstSection {
+    background-image: url(../img/backgroundWorker.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 6px solid #f8b407;
+}
+#firstSection p {
+    font-size: 1.5em;
+
+    
+    
+}
+#longLogo {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+    margin-top: 20em;
+    
+}
+@media only screen and (min-width: 768px){
+ 
+    #firstSection{
+        height: 700px;
+    }
+    #longLogo{
+        width: 80%;
+        
+    }
+    #fifthSection h1{
+    padding-top: 10px;
+}
+ 
+}
+
+/* Second Section------------------------------------------------------------*/
+#secondSection {
+    width: 100%;
+    height: 800px;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+#process{
+    height: 600px;
+    width: 90%;
+    background: rgba(114,108,186,0.37);
+    margin: auto;
+    margin-top: 10vh;
+    border-bottom: 6px solid #242361;
+    border-right: 6px solid #242361;
+    z-index: 99;
+    
+}
+#process img{
+    width: 5em;
+    display: block;
+    margin: auto;
+    padding-top: 1em;
+}
+
+@media only screen and (min-width: 768px){
+    #process{
+        width: 50%;
+    }
+}
+/* Displaying text aligned verticallly and horizontaly in a div */
+.parent {
+    display: table;
+    height: 300px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+.parent3 {
+    display: table;
+    height: 100px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+.parent4 {
+    display: table;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    word-wrap:break-word;
+}
+.parent2 {
+    display: table;
+    height: 300px;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+}
+.child {
+    height: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+.child3 {
+    height: 130px;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+.child4 {
+    height: 100px;
+    width: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    word-wrap:break-word;
+}
+.child2 {
+    width: 100%;
+    height: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+/* Displaying text aligned verticallly and horizontaly in a div */
+#aboutCompanyArticle p{
+    color: white;
+    padding: 4%;
+    
+}
+#aboutOwnerArticle p{
+    color: white;
+    padding: 4%;
+    word-wrap:break-word;
+    
+}
+#aboutCompanyAside {
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    display: inline-block;
+    width: 39%;
+    background-image: url(../img/Ourcompany.jpg);
+        background-position: center;
+    background-size: cover;
+    height: 300px;
+    line-height: 2em;
+}
+#aboutOwnerAside {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 40%;
+    background-image: url(../img/Alex.jpg);
+        background-position: center;
+    background-size: cover;
+    height: 295px;
+    line-height: 2em;
+}
+/* Third Section-------------------------------------------------------------*/
+#thirdSection{
+    width: 100%;
+    height: 630px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow:hidden;
+}
+#thirdSection h1{
+    padding-top: 30px;
+}
+.references{
+    width: 90%;
+    height: 250px;
+    background: rgba(248,180,7,0.37);
+    position: relative;
+    margin: auto;
+    margin-top: 4%;
+            border-bottom: 6px solid #f8b407;
+    border-right: 6px solid #f8b407;
+}
+.references p{
+    font-size: 1em;
+}
+.references img{
+     max-height: 100%;  
+    max-width: 100%; 
+    width: 6em;
+    height: auto;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
+}
+.referencesName{
+    line-height: 2em;
+    text-align: center;
+    margin: auto;
+    margin-top: 175px;
+}
+
+@media only screen and (min-width: 768px){
+    .references{
+        width: 45%;
+    }
+    #thirdSection{
+        height: 400px;
+    }
+
+}
+@media only screen and (min-width: 1220px){
+    
+ .references{
+        width: 30%;
+    }
+}
+
+/* Fourth Section-------------------------------------------------------------*/
+#fourthSection{
+    width: 100%;
+    height: 1800px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.scandimates{
+    height: 450px;
+    width: 90%;
+    line-height: 0;
+    margin: auto;
+    margin-top: 2em;
+}
+.scandimates2{
+    height: 450px;
+    width: 90%;
+    line-height: 0;
+    margin: 0;
+    margin-top: 2em;
+}
+.scandimates img{
+    height: 15em;
+    margin: 0;
+    padding: 0;
+}
+.scandimates2 img{
+    height: 15em;
+    margin: 0;
+    padding: 0;
+}
+.scandimatesName{
+    margin: 0;
+    padding: 0;
+    height: 130px;
+    width: 100%;
+    background: rgba(114,108,186,0.37);
+    line-height: 2em;
+    border-right: 6px solid #242361;
+}
+.scandimatesName p{
+    color:#FFFCF2;
+}
+.scandimatesQuote{
+    height: 100px;
+    width: 100%;;
+    line-height: 1em;
+    border-bottom: 6px solid #242361;
+    border-right: 6px solid #242361;
+    word-wrap:break-word;
+}
+@media only screen and (min-width: 768px){
+    .scandimates{
+        width: 30%;
+    }
+    .scandimates2{
+        width: 30%;
+    }
+    #fourthSection{
+        height: 600px;
+    }
+    
+}
+@media only screen and (min-width: 1220px){
+        .scandimates{
+        width: 20%;
+    }
+    .scandimates2{
+        width: 20%;
+    }
+}
+
+/* Fifth Section-------------------------------------------------------------*/
+#fifthSection {
+    width: 100%;
+    height: 1300px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow:hidden;
+}
+#fifthSection h1{
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+    flex-wrap: wrap;
+}
+#aboutCompany{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: rgba(248,180,7,0.37);
+        border-bottom: 6px solid #f8b407;
+    border-right: 6px solid #f8b407;
+    margin-top: 2em;
+}
+#aboutCompany img{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+#aboutOwner{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background: rgba(114,108,186,0.37);
+        border-bottom: 6px solid #242361;
+    border-right: 6px solid #242361;
+    margin-top: 2em;
+}
+#aboutOwner img{
+    height: auto;
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 35%;
+}
+@media only screen and (min-width: 470px){
+  
+#aboutCompany img{
+    width: 50%;
+    margin-left: 25%;
+}
+    #aboutOwner img{
+    width: 15%;
+    margin-left: 42.5%;
+}
+    
+}
+@media only screen and (min-width: 768px){
+    #fifthSection{
+        height: 750px;
+    }
+    #aboutCompany{
+        width: 35%;
+        display: inline-block;
+        margin: auto;
+    }
+    #aboutCompany img{
+    width: 100%;
+    margin-left: 0;
+}
+    #aboutOwner{
+        width: 35%;
+        display: inline-block;
+        float: right;
+        margin: auto;
+        margin-right: 2.5%;
+    }
+    #aboutOwner img{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .text{
+        display: inline-block;
+        width: 60%;
+        margin: auto;
+    }
+    .aboutHeader{
+        margin-bottom: 2em;
+    }
+}
+@media only screen and (min-width: 1220px){
+    
+    #aboutCompany img{
+    width: 100%;
+    margin: auto;
+}
+    #aboutOwner{
+        width: 30%;
+        display: inline-block;
+        float: right;
+        margin: auto;
+        margin-right: 10%;
+    }
+    #aboutOwner img{
+        width: 10em;
+        margin-left: 40%;
+    }
+    .text{
+        display: inline-block;
+        width: 50%;
+        margin: auto;
+    }
+    .text2{
+        float: right;
+        margin-right: 10%;
+    }
+       #aboutCompany{
+        width: 30%;
+        display: inline-block;
+        margin: auto;
+           margin-left: 10%;
+    }
+    
+}
+@media only screen and (min-width: 1500px){
+    #aboutCompany img{
+    width: 90%;
+    margin-left: 5%;
+}
+}
+/* .flex-container > div {
+  width: 400px;
+  margin: 10px;
+    margin-top: 40px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+} */
+.employessP{
+    display: inline-block;
+    width: 32%;
+    color: white;
+}
+
+/* Sixth Section-------------------------------------------------------------*/
+#sixthSection {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow:hidden;
+}
+.collapsible-header{
+    background: rgba(248,180,7,0.37);
+}
+.collapsible-body{
+}
+.collapsible{
+    width: 80%;
+    margin: auto;
+    position: relative;
+    margin-top: 2em;
+}
+.collapsible img{
+    
+    position: absolute;
+    right: 0;
+    margin-right: 0.5em;
+
+
+}
+.collapsible-body p{
+    font-size: 0.4em;
+}
+.rotate11 {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.rotate11.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.rotate22 {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.rotate22.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.rotate33 {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.rotate33.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+.rotate44 {
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+.rotate44.down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+    border-top: 6px solid #242361;
+	height: 100px;
+	background: rgba(114,108,186,0.37);
+}
+#fb{
+    width: 6em;
+    position: relative;
+    float: right;
+    padding-top:1.5em;
+    margin-right: 2em;
+}
+#ig{
+    width: 9em;
+    position: relative;
+float: right;
+    padding-top: 1em;
+}
