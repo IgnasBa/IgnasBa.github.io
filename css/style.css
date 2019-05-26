@@ -67,6 +67,7 @@ h1{
     color: #242361;
     text-align: center;
     padding-top: 2em;
+    
 }
 h2{
     font-size: 1em;
@@ -130,14 +131,21 @@ li {
 .right li {
    
 }
-
-@media only screen and (max-width: 1260px){
-    
- .left li {
+@media only screen and (min-width: 993px){
+     .left li {
     margin-left: 5vw;
 }
 .right li {
     margin-right: 5vw;
+}
+}
+@media only screen and (min-width: 1260px){
+    
+ .left li {
+    margin-left: 8vw;
+}
+.right li {
+    margin-right: 8vw;
 }
 }
 
@@ -206,6 +214,7 @@ li {
     border-bottom: 6px solid #242361;
     border-right: 6px solid #242361;
     z-index: 99;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
     
 }
 #process img{
@@ -328,7 +337,7 @@ li {
 /* Third Section-------------------------------------------------------------*/
 #thirdSection{
     width: 100%;
-    height: 630px;
+    height: 650px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -346,6 +355,7 @@ li {
     margin-top: 4%;
             border-bottom: 6px solid #f8b407;
     border-right: 6px solid #f8b407;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .references p{
     font-size: 1em;
@@ -374,7 +384,7 @@ li {
         width: 45%;
     }
     #thirdSection{
-        height: 400px;
+        height: 440px;
     }
 
 }
@@ -388,24 +398,29 @@ li {
 /* Fourth Section-------------------------------------------------------------*/
 #fourthSection{
     width: 100%;
-    height: 1500px;
+    height: 1400px;
     margin: 0;
     padding: 0;
     text-align: center;
 }
 .scandimates{
-    height: 450px;
+    height: 410px;
     width: 90%;
     line-height: 0;
     margin: auto;
     margin-top: 2em;
+
 }
 .scandimates2{
-    height: 450px;
+    height: 410px;
     width: 90%;
     line-height: 0;
     margin: 0;
     margin-top: 2em;
+
+}
+.scandi{
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 .scandimates img{
     height: 15em;
@@ -425,6 +440,7 @@ li {
     background: rgba(114,108,186,0.37);
     line-height: 2em;
     border-right: 6px solid #242361;
+    
 }
 .scandimatesName p{
     color:#FFFCF2;
@@ -445,7 +461,7 @@ li {
         width: 30%;
     }
     #fourthSection{
-        height: 600px;
+        height: 640px;
     }
     
 }
@@ -461,7 +477,7 @@ li {
 /* Fifth Section-------------------------------------------------------------*/
 #fifthSection {
     width: 100%;
-    height: 1300px;
+    height: 1350px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -482,6 +498,9 @@ li {
         border-bottom: 6px solid #f8b407;
     border-right: 6px solid #f8b407;
     margin-top: 2em;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    margin-bottom: 2em;
+
 }
 #aboutCompany img{
     width: 100%;
@@ -497,6 +516,8 @@ li {
         border-bottom: 6px solid #242361;
     border-right: 6px solid #242361;
     margin-top: 2em;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
 }
 #aboutOwner img{
     height: auto;
@@ -520,12 +541,14 @@ li {
 }
 @media only screen and (min-width: 768px){
     #fifthSection{
-        height: 750px;
+        height: 780px;
     }
     #aboutCompany{
         width: 35%;
         display: inline-block;
         margin: auto;
+       
+           
     }
     #aboutCompany img{
     width: 100%;
@@ -537,6 +560,7 @@ li {
         float: right;
         margin: auto;
         margin-right: 2.5%;
+           
     }
     #aboutOwner img{
         width: 30%;
@@ -570,18 +594,24 @@ li {
     }
     .text{
         display: inline-block;
-        width: 50%;
+        width: 45%;
         margin: auto;
     }
     .text2{
         float: right;
         margin-right: 10%;
     }
+    .text1{
+        margin-left: 10%;
+    }
        #aboutCompany{
         width: 30%;
         display: inline-block;
         margin: auto;
            margin-left: 10%;
+    }
+    .parent2{
+        width: 100%;
     }
     
 }
@@ -608,7 +638,7 @@ li {
 /* Sixth Section-------------------------------------------------------------*/
 #sixthSection {
     width: 100%;
-    height: 600px;
+    height: 700px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -624,6 +654,8 @@ li {
     margin: auto;
     position: relative;
     margin-top: 2em;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+
 }
 .collapsible img{
     
@@ -635,6 +667,12 @@ li {
 }
 .collapsible-body p{
     font-size: 0.4em;
+}
+@media only screen and (min-width: 768px){
+    .collapsible{
+            
+        
+    }
 }
 .rotate11 {
     -moz-transition: all .2s linear;
