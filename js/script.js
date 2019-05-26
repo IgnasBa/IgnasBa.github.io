@@ -1,14 +1,35 @@
-
-/* Collapsible from W3 Schools https://www.w3schools.com/howto/howto_js_collapsible.asp*/
+/* Navigation from materialize.js */
 
   $(document).ready(function(){
     $('.sidenav').sidenav();
   });
-  $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
-  });
+  
   $(document).ready(function(){
     $('.collapsible').collapsible();
+      $(".rotate1").click(function () {
+    $(".rotate11").toggleClass("down");
+          $(".rotate33").removeClass("down");
+           $(".rotate22").removeClass("down");
+           $(".rotate44").removeClass("down");
+});
+       $(".rotate2").click(function () {
+    $(".rotate22").toggleClass("down");
+           $(".rotate11").removeClass("down");
+           $(".rotate33").removeClass("down");
+           $(".rotate44").removeClass("down");
+});
+       $(".rotate3").click(function () {
+    $(".rotate33").toggleClass("down");
+           $(".rotate11").removeClass("down");
+           $(".rotate22").removeClass("down");
+           $(".rotate44").removeClass("down");
+});
+       $(".rotate4").click(function () {
+    $(".rotate44").toggleClass("down");
+           $(".rotate11").removeClass("down");
+           $(".rotate22").removeClass("down");
+           $(".rotate33").removeClass("down");
+});
   });
 function ipLookUp () {
   $.ajax('http://ip-api.com/json')
@@ -23,4 +44,4 @@ function ipLookUp () {
       }
   );
 }
-ipLookUp()
+ipLookUp();

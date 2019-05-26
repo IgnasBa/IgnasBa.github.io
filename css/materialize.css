@@ -5842,8 +5842,6 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .collapsible {
-  border-right: 1px solid #ddd;
-  border-left: 1px solid #ddd;
   margin: 0 0 1rem 0;
 }
 
@@ -5856,8 +5854,8 @@ body.keyboard-focused .dropdown-content li:focus {
   -webkit-tap-highlight-color: transparent;
   line-height: 1.5;
   padding: 1rem;
-  background-color: #e8cd5c;
-  border-bottom: 1px solid #ddd;
+  background-color: #f8b407;
+
 }
 
 .collapsible-header:focus {
