@@ -66,7 +66,7 @@ h1{
     line-height: 1em;
     color: #242361;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 2em;
 }
 h2{
     font-size: 1em;
@@ -171,9 +171,24 @@ li {
     height: auto;
     display: block;
     margin: auto;
-    margin-top: 40vh;
+    margin-top: 20em;
     
 }
+@media only screen and (min-width: 768px){
+ 
+    #firstSection{
+        height: 700px;
+    }
+    #longLogo{
+        width: 80%;
+        
+    }
+    #fifthSection h1{
+    padding-top: 10px;
+}
+ 
+}
+
 /* Second Section------------------------------------------------------------*/
 #secondSection {
     width: 100%;
@@ -181,11 +196,6 @@ li {
     margin: 0;
     padding: 0;
     word-wrap:break-word;
-
-
-
-    
-    
 }
 #process{
     height: 600px;
@@ -204,25 +214,11 @@ li {
     margin: auto;
     padding-top: 1em;
 }
-#aboutCompanyArticle {
-    display: inline-block;
-    width: 60%;
-    height: 300px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    overflow:hidden;
-}
-#aboutOwnerArticle {
-    display: inline-block;
-    position: absolute;
-    width: 60%;
-    height: 300px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    word-wrap:break-word;
-    overflow:hidden;
+
+@media only screen and (min-width: 768px){
+    #process{
+        width: 50%;
+    }
 }
 /* Displaying text aligned verticallly and horizontaly in a div */
 .parent {
@@ -244,7 +240,7 @@ li {
 .parent4 {
     display: table;
     height: 100px;
-    width: 300px;
+    width: 100%;
     margin: auto;
     padding: 0;
     word-wrap:break-word;
@@ -374,22 +370,25 @@ li {
 }
 
 @media only screen and (min-width: 768px){
-    
+    .references{
+        width: 45%;
+    }
     #thirdSection{
-    height: 400px;
-}
+        height: 400px;
+    }
+
 }
 @media only screen and (min-width: 1220px){
     
-    #thirdSection{
-    height: 450px;
-}
+ .references{
+        width: 30%;
+    }
 }
 
 /* Fourth Section-------------------------------------------------------------*/
 #fourthSection{
     width: 100%;
-    height: 1400px;
+    height: 1500px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -399,8 +398,21 @@ li {
     width: 90%;
     line-height: 0;
     margin: auto;
+    margin-top: 2em;
+}
+.scandimates2{
+    height: 450px;
+    width: 90%;
+    line-height: 0;
+    margin: 0;
+    margin-top: 2em;
 }
 .scandimates img{
+    height: 15em;
+    margin: 0;
+    padding: 0;
+}
+.scandimates2 img{
     height: 15em;
     margin: 0;
     padding: 0;
@@ -425,7 +437,26 @@ li {
     border-right: 6px solid #242361;
     word-wrap:break-word;
 }
-
+@media only screen and (min-width: 768px){
+    .scandimates{
+        width: 30%;
+    }
+    .scandimates2{
+        width: 30%;
+    }
+    #fourthSection{
+        height: 600px;
+    }
+    
+}
+@media only screen and (min-width: 1220px){
+        .scandimates{
+        width: 20%;
+    }
+    .scandimates2{
+        width: 20%;
+    }
+}
 
 /* Fifth Section-------------------------------------------------------------*/
 #fifthSection {
@@ -475,9 +506,90 @@ li {
     left: 0;
     margin-left: 35%;
 }
-.flex-container img{
-
-    height: auto;
+@media only screen and (min-width: 470px){
+  
+#aboutCompany img{
+    width: 50%;
+    margin-left: 25%;
+}
+    #aboutOwner img{
+    width: 15%;
+    margin-left: 42.5%;
+}
+    
+}
+@media only screen and (min-width: 768px){
+    #fifthSection{
+        height: 750px;
+    }
+    #aboutCompany{
+        width: 35%;
+        display: inline-block;
+        margin: auto;
+    }
+    #aboutCompany img{
+    width: 100%;
+    margin-left: 0;
+}
+    #aboutOwner{
+        width: 35%;
+        display: inline-block;
+        float: right;
+        margin: auto;
+        margin-right: 2.5%;
+    }
+    #aboutOwner img{
+        width: 30%;
+        margin-left: 35%;
+    }
+    .text{
+        display: inline-block;
+        width: 60%;
+        margin: auto;
+    }
+    .aboutHeader{
+        margin-bottom: 2em;
+    }
+}
+@media only screen and (min-width: 1220px){
+    
+    #aboutCompany img{
+    width: 100%;
+    margin: auto;
+}
+    #aboutOwner{
+        width: 30%;
+        display: inline-block;
+        float: right;
+        margin: auto;
+        margin-right: 10%;
+    }
+    #aboutOwner img{
+        width: 10em;
+        margin-left: 40%;
+    }
+    .text{
+        display: inline-block;
+        width: 50%;
+        margin: auto;
+    }
+    .text2{
+        float: right;
+        margin-right: 10%;
+    }
+       #aboutCompany{
+        width: 30%;
+        display: inline-block;
+        margin: auto;
+           margin-left: 10%;
+    }
+    
+}
+@media only screen and (min-width: 1500px){
+    #aboutCompany img{
+    width: 90%;
+    margin-left: 5%;
+}
 }
 /* .flex-container > div {
   width: 400px;
@@ -492,31 +604,7 @@ li {
     width: 32%;
     color: white;
 }
-@media only screen and (min-width: 768px){
- 
-.flex-container img{
-    width: 7em;
-    height: 100%;
-}
-    #fifthSection h1{
-    padding-top: 10px;
-}
- 
-}
-@media only screen and (min-width: 1220px){
- 
-.flex-container img{
-    width: 10em;
-    height: 100%;
-}
-    #fifthSection h1{
-    padding-top: 10px;
-}
-    #fifthSection{
-        height: 450px;
-    }
- 
-}
+
 /* Sixth Section-------------------------------------------------------------*/
 #sixthSection {
     width: 100%;
