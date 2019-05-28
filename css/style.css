@@ -411,7 +411,7 @@ input:focus {
     display: inline-block;
     width: 49.72%;
     height: auto;
-    padding-top: 250px;
+    padding-top: 20vh;
     float: left;
 
 }
