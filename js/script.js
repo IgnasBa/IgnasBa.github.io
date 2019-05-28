@@ -65,55 +65,30 @@ var hours = date.getHours();
 }
 ipLookUp();
 $(function() {
-  if ($(window).width() < 768) {
+  //if ($(window).width() < 768) {
    $('#contact').click(function() {
-    $('#contactForm').fadeToggle();
+    $('#contactForm2').fadeToggle();
   })
      $('#close').click(function() {
     $('#contactForm').fadeToggle();
   })
      
-}
-else {
+//}
+//else {
 
-   $('#contact').click(function() {
-    $('#contactForm2').fadeToggle();
+   $('#contact2').click(function() {
+    $('#contactForm').fadeToggle();
   })
      $('#close2').click(function() {
     $('#contactForm2').fadeToggle();
   })
-}
-    
+//}
+})
   // contact form animations
   
 
   
-});
-$(function() {
-  if ($(window).width() < 768) {
-   $('#contact2').click(function() {
-    $('#contactForm').fadeToggle();
-  })
-     $('#close').click(function() {
-    $('#contactForm').fadeToggle();
-  })
-     
-}
-else {
 
-   $('#contact2').click(function() {
-    $('#contactForm2').fadeToggle();
-  })
-     $('#close').click(function() {
-    $('#contactForm2').fadeToggle();
-  })
-}
-    
-  // contact form animations
-  
-
-  
-});
 
 document.getElementById("processArrow").addEventListener('click', function() {
     if(document.getElementById("processArrow").classList.contains("rotate")){
