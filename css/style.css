@@ -409,13 +409,11 @@ input:focus {
 
 #formSection1 {
    #formSection1 {
-    display: inline-block;
+     display: inline-block;
     width: 49.72%;
     height: auto;
     float: left;
-    position: relative;
-top: 40%;
-transform: translateY(-50%);
+    margin-top: 27vh;
 
 }
 
