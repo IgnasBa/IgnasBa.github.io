@@ -427,6 +427,12 @@ transform: translateY(-50%);
     height: 100%;
     background: #CBC9E6;
 }
+#contactForm2 input{
+    height: 5vh;
+    position: relative;
+top: 40%;
+transform: translateY(-50%);
+}
 
 #formm2 {
     height: 100%;
