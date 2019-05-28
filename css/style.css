@@ -408,16 +408,18 @@ input:focus {
 }
 
 #formSection1 {
-   #formSection1 {
+
      display: inline-block;
     width: 49.72%;
     height: auto;
     float: left;
-    margin-top: 27vh;
+    position: relative;
+top: 40%;
+transform: translateY(-50%);
 
 }
 
-}
+
 
 #formSection2 {
     display: inline-block;
