@@ -4952,7 +4952,7 @@ $jscomp.polyfill = function (e, r, p, m) {
       }, delay);
     },
 
-    // Little hack to make <input> can perform waves effect
+    // Little hack to make <df> can perform waves effect
     wrapInput: function (elements) {
       for (var a = 0; a < elements.length; a++) {
         var el = elements[a];
