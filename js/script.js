@@ -83,6 +83,32 @@ else {
     $('#contactForm2').fadeToggle();
   })
 }
+    
+  // contact form animations
+  
+
+  
+});
+$(function() {
+  if ($(window).width() < 768) {
+   $('#contact2').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+     $('#close').click(function() {
+    $('#contactForm').fadeToggle();
+  })
+     
+}
+else {
+
+   $('#contact2').click(function() {
+    $('#contactForm2').fadeToggle();
+  })
+     $('#close').click(function() {
+    $('#contactForm2').fadeToggle();
+  })
+}
+    
   // contact form animations
   
 
