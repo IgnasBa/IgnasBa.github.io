@@ -148,7 +148,7 @@ summary {
 }
 
 body {
-    font: 12px/18px Arial, sans-serif;
+    font: 12px/18px 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -447,7 +447,8 @@ transform: translateY(-50%);
 }
 
 nav {
-    background-color: #726cba;
+    background-color: #CBC9E6;
+    border-bottom: 6px solid #242361;
     height: 50px;
 }
 
@@ -479,6 +480,15 @@ li {
 
     .right li {
         margin-right: 1vw;
+    }
+    #circle_logo{
+        height: 100px;
+    }
+    .header{
+        height: 70px;
+    }
+    nav {
+        height: 70px;
     }
 }
 
@@ -538,6 +548,12 @@ li {
     margin-top: 30vh;
     width: 100%;
 }
+#firstArrow{
+    width: 7em;
+    padding-top: 120px;
+    display: block;
+    margin: auto;
+}
 
 @media only screen and (min-width: 768px) {
 
@@ -546,15 +562,24 @@ li {
     }
 
     #longLogo {
+        display: block;
         width: 60%;
 
     }
 
-    #secondSection h1 {
-        padding-top: 10px;
+    #longLogo2{
+        display: none;
     }
+    h2{
+        margin-top: 30px;
+        font-size: 2em;
+    }
+    #firstArrow{
+    width: 12em;
+}
 
 }
+
 
 /* Second Section------------------------------------------------------------*/
 #fourthSection {
@@ -584,6 +609,12 @@ li {
     overflow: hidden;
 
 
+}
+#margin{
+    height: 20px;
+}
+#processLine{
+    margin-top: 10px;
 }
 /* Animations */
 .transition {
@@ -617,7 +648,7 @@ li {
 }
 
 #processArrow {
-    width: 7em;
+    width: 5em;
     display: block;
     margin: auto;
     padding: 1em;
@@ -952,7 +983,7 @@ li {
 /* Fifth Section-------------------------------------------------------------*/
 #secondSection {
     width: 100%;
-    height: 11    0px;
+    height: auto;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -1021,20 +1052,26 @@ li {
         width: 15%;
         margin-left: 42.5%;
     }
+  
 
 }
 
 @media only screen and (min-width: 768px) {
     #secondSection {
-        height: 780px;
+        height: auto;
     }
 
     #aboutCompany {
+        height: 300px;
         width: 35%;
         display: inline-block;
         margin: auto;
 
 
+    }
+    #secondSection p{
+        font-size: 1.1em;
+        line-height: 1.3em;
     }
 
     #aboutCompany img {
@@ -1043,12 +1080,16 @@ li {
     }
 
     #aboutOwner {
+        height: 300px;
         width: 35%;
         display: inline-block;
         float: right;
         margin: auto;
         margin-right: 2.5%;
 
+    }
+    .child{
+        height: 300px;
     }
 
     #aboutOwner img {
@@ -1068,6 +1109,10 @@ li {
 }
 
 @media only screen and (min-width: 1220px) {
+    #secondSection p{
+        font-size: 1.3em;
+        line-height: 1.5em;
+    }
 
     #aboutCompany img {
         width: 100%;
@@ -1139,7 +1184,7 @@ li {
 /* Sixth Section-------------------------------------------------------------*/
 #sixthSection {
     width: 100%;
-    height: 650px;
+    height: 600px;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -1181,9 +1226,15 @@ li {
 .collapsible-body p {
     font-size: 0.4em;
 }
+#contactH{
+    padding: 0;
+    padding-bottom: 20px;
+}
 
 @media only screen and (min-width: 768px) {
-    .collapsible {}
+    .collapsible {
+        width: 80%;
+    }
 }
 
 .rotate11 {
