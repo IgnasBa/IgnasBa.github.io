@@ -941,16 +941,16 @@ li {
     margin: 0;
     padding: 0;
     margin-bottom: 1em;
-    margin-top: 2em;
+    margin-top: 5em;
         
 }
 
 .scandimates2 img {
-    height: 15em;
+    height: 14em;
     margin: 0;
     padding: 0;
     margin-bottom: 1em;
-    margin-top: 2em;
+    margin-top: 7em;
 }
 
 .scandimatesName {
@@ -965,6 +965,9 @@ li {
 
 .scandimatesName p {
     color: #FFFCF2;
+}
+.scandimates.bottom img{
+    margin-top: 8em;
 }
 
 .scandimatesQuote {
@@ -987,6 +990,12 @@ li {
 
     #fifthSection {
         height: 620px;
+    }
+    .scandimates.bottom img{
+        margin-top: 6em;
+    }
+    .scandimates.top img{
+        margin-top: 6em;
     }
 
 }
