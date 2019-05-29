@@ -992,10 +992,13 @@ li {
         height: 620px;
     }
     .scandimates.bottom img{
-        margin-top: 6em;
+        margin-top: 1em;
     }
     .scandimates.top img{
-        margin-top: 6em;
+        margin-top: 1em;
+    }
+    .scandimates2 img{
+        margin-top: 2em;
     }
 
 }
