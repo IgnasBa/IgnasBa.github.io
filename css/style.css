@@ -1217,7 +1217,7 @@ li {
 /* Sixth Section-------------------------------------------------------------*/
 #sixthSection {
     width: 100%;
-    height: 650px;
+    height: auto;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -1228,8 +1228,8 @@ li {
     background: #FCE3A4;
     z-index: 2;
     border-bottom: 5px solid #f8b407;
-    height: 3em;
-    font-size: 0.7em;
+    height: 5em;
+    font-size: 0.33em;
     color: #242361;
 }
 
@@ -1243,6 +1243,7 @@ li {
     margin-top: 3%;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
     z-index: 1;
+    margin-bottom: 3em;
 
 }
 
@@ -1267,6 +1268,10 @@ li {
 @media only screen and (min-width: 768px) {
     .collapsible {
         width: 80%;
+    }
+    .collapsible-header{
+        font-size: 0.7em;
+        height: 3em;
     }
 }
 
