@@ -545,7 +545,7 @@ li {
 }
 #firstArrow{
     width: 7em;
-    padding-top: 15vh;
+    padding-top: 2vh;
     display: block;
     margin: auto;
 }
@@ -872,7 +872,7 @@ li {
     }
 
     #thirdSection {
-        height: 490px;
+        height: 510px;
     }
 
 }
@@ -1061,7 +1061,7 @@ li {
 
 @media only screen and (min-width: 768px) {
     #secondSection {
-        height: 850px;
+        height: 865px;
     }
 
     #aboutCompany {
@@ -1187,7 +1187,7 @@ li {
 /* Sixth Section-------------------------------------------------------------*/
 #sixthSection {
     width: 100%;
-    height: 600px;
+    height: 650px;
     margin: 0;
     padding: 0;
     text-align: center;
